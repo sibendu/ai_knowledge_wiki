@@ -1,0 +1,10 @@
+{
+  "codex-panel:open-new-panel": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "H"
+    }
+  ]
+}

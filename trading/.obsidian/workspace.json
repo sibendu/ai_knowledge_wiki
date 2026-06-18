@@ -1,0 +1,242 @@
+{
+  "main": {
+    "id": "3510f384a46442e9",
+    "type": "split",
+    "children": [
+      {
+        "id": "4521ac1b66ac2d3a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cd752ef5aeccf666",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "68fcef1777815636",
+    "type": "split",
+    "children": [
+      {
+        "id": "6d9d587c86ca1f87",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c882ec0f827819e4",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "8cc3da818219a3ee",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "b20f24d5add27b37",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "18bd3ddef40f649e",
+    "type": "split",
+    "children": [
+      {
+        "id": "170e8215b9735d83",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f8a14689c772c5cb",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "b99e673def7d09b6",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "fee346b60a092cd0",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "be0ba1982e871933",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "d2cd5312b91a5ba1",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          },
+          {
+            "id": "b598783f82de1519",
+            "type": "leaf",
+            "state": {
+              "type": "codex-panel-view",
+              "state": {
+                "version": 1
+              },
+              "icon": "bot-message-square",
+              "title": "Codex"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "codex-panel:Open panel": false
+    }
+  },
+  "active": "cd752ef5aeccf666",
+  "lastOpenFiles": [
+    "wiki/indicators/rsi.md",
+    "wiki/concepts/risk-management.md",
+    "wiki/log.md.tmp.1456606.35c4b757a807",
+    "wiki/index.md.tmp.1456606.d3cbb02fc801",
+    "wiki/index.md.tmp.1456606.1ed1c143103c",
+    "wiki/index.md.tmp.1456606.7f5305583637",
+    "wiki/index.md.tmp.1456606.251a3f5a2691",
+    "wiki/concepts/trading-edge.md.tmp.1456606.9f1bb45f5c93",
+    "wiki/concepts/support-resistance.md.tmp.1456606.2064c4b0b441",
+    "wiki/concepts/market-leadership.md.tmp.1456606.6ba17c55d026",
+    "wiki/concepts/trading-psychology.md.tmp.1456606.71f1800a465e",
+    "wiki/concepts/position-sizing.md.tmp.1456606.1fe5899a2383",
+    "wiki/concepts/earnings-quality.md",
+    "wiki/concepts/earnings-acceleration.md",
+    "wiki/indicators/relative-strength-ranking.md",
+    "wiki/setups/volatility-contraction-pattern.md",
+    "wiki/concepts/trend-template.md",
+    "wiki/concepts/stage-analysis.md",
+    "wiki/strategies/sepa-strategy.md",
+    "wiki/entities/people/mark-minervini.md",
+    "wiki/source-notes/2026-06-18-trade-like-a-stock-market-wizard.md",
+    "skills/preprocessed-pdf-wiki-ingest/SKILL.md",
+    "raw/inbox/trade_like_a_stock_market_wizard/assets/stock-trading/fig_p99_028.png",
+    "raw/inbox/trade_like_a_stock_market_wizard/assets/stock-trading/fig_p97_027.png",
+    "raw/inbox/trade_like_a_stock_market_wizard/assets/stock-trading/fig_p97_026.png",
+    "raw/inbox/trade_like_a_stock_market_wizard/assets/stock-trading/fig_p96_025.png",
+    "raw/inbox/trade_like_a_stock_market_wizard/assets/stock-trading/fig_p94_024_vec.png",
+    "raw/inbox/trade_like_a_stock_market_wizard/assets/stock-trading/fig_p93_023.png",
+    "raw/inbox/trade_like_a_stock_market_wizard/assets/stock-trading/fig_p93_022.png",
+    "raw/inbox/trade_like_a_stock_market_wizard/assets/stock-trading/fig_p92_021.png",
+    "raw/inbox/trade_like_a_stock_market_wizard/assets/stock-trading/fig_p92_020.png",
+    "raw/inbox/trade_like_a_stock_market_wizard/assets/stock-trading/fig_p91_019.png",
+    "raw/inbox/trade_like_a_stock_market_wizard/notes/stock-trading.md",
+    "raw/inbox/README.md",
+    "wiki/index.md",
+    "wiki/overview.md",
+    "backup/test_vault/notes/stock-trading.md",
+    "backup/New folder/README.md",
+    "backup/New folder/CLAUDE.md",
+    "backup/test_vault/notes/sample.md",
+    "wiki/setups/ascending-triangle-breakout.md",
+    "wiki/concepts/support-resistance.md",
+    "wiki/source-notes/2026-06-14-technical-analysis-masterclass-sample.md",
+    "wiki/indicators/livermore-market-key.md",
+    "raw/inbox/sample_market_notes/notes/sample.md",
+    "backup/test_vault/sample_market_notes/notes/sample.md"
+  ]
+}

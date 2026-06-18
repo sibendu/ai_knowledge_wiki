@@ -1,0 +1,4 @@
+interface:
+  display_name: "Preprocessed PDF Wiki Ingest"
+  short_description: "Ingest Markdown PDFs into the trading wiki"
+  default_prompt: "Use $preprocessed-pdf-wiki-ingest to ingest raw/inbox/<document_name>/ into the trading wiki with confirmation before edits."
