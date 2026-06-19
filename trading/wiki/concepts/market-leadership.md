@@ -6,6 +6,7 @@ updated: 2026-06-13
 tags: [leadership, sectors, groups, relative-strength]
 sources:
   - ../source-notes/2026-06-13-how-to-trade-in-stocks-jesse-livermore.md
+  - ../source-notes/2026-06-19-reminiscences-of-a-stock-operator.md
 confidence: medium
 ---
 
@@ -40,15 +41,22 @@ In [How to Trade in Stocks](../source-notes/2026-06-13-how-to-trade-in-stocks-je
 - Acting on one stock's reversal before group confirmation.
 - Waiting for a public explanation instead of respecting price behavior.
 
+## Group Divergence Signal (Reminiscences, 1923)
+
+Source: [Reminiscences of a Stock Operator](../source-notes/2026-06-19-reminiscences-of-a-stock-operator.md). Leadership describes *which* group leads; the related concept of [Stock Group Behavior](stock-group-behavior.md) adds an actionable *divergence* signal: a stock that refuses to follow its group in a bull market is usually being distributed by informed insiders, and the tape warns before the news (Chester Motors, Guiana Gold). The mirror case — a stock supported by inside buying while the tape is weak — flags accumulation. See the dedicated [Stock Group Behavior](stock-group-behavior.md) page for examples and failure modes.
+
 ## Related Pages
 
 - [Pivotal Point Trading](../strategies/pivotal-point-trading.md)
 - [Livermore Market Key](../indicators/livermore-market-key.md)
 - [Trading Edge](trading-edge.md)
+- [Stock Group Behavior](stock-group-behavior.md)
+- [Tape Reading](tape-reading.md)
 
 ## Source Notes
 
 - [How to Trade in Stocks - Jesse L. Livermore](../source-notes/2026-06-13-how-to-trade-in-stocks-jesse-livermore.md)
+- [Reminiscences of a Stock Operator - Edwin LeFevre (Jesse Livermore)](../source-notes/2026-06-19-reminiscences-of-a-stock-operator.md)
 
 ## Notes From Trade Like a Stock Market Wizard (Minervini, 2013)
 

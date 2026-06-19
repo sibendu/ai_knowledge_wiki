@@ -1,0 +1,202 @@
+{
+  "main": {
+    "id": "abdea16fd7b7f8cd",
+    "type": "split",
+    "children": [
+      {
+        "id": "e0e1a992973df4a2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c6431e37866f1f75",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a0cd339808a041a6",
+    "type": "split",
+    "children": [
+      {
+        "id": "a9a28500060fbdee",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "113fddf9cb7d431c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "38e5b66e6a5616d7",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "7b28de4eb7b4124a",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "3cf7e5511b6afd04",
+    "type": "split",
+    "children": [
+      {
+        "id": "bcabd90b4507c5e1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7985998db2920e32",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "notes/stock-trading.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for stock-trading"
+            }
+          },
+          {
+            "id": "c7f3f15b4b6790a3",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "notes/stock-trading.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from stock-trading"
+            }
+          },
+          {
+            "id": "33155c2ca1577d8f",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "9552bca063ae3a27",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "2c7549ca4b01d37f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "notes/stock-trading.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of stock-trading"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "113fddf9cb7d431c",
+  "lastOpenFiles": [
+    "notes/stock-trading.md",
+    "assets/stock-trading/fig_p325_161.png",
+    "assets/stock-trading/fig_p324_160.png",
+    "assets/stock-trading/fig_p294_159.png",
+    "assets/stock-trading/fig_p292_158.png",
+    "assets/stock-trading/fig_p97_027.png",
+    "assets/stock-trading/fig_p99_028.png",
+    "assets/stock-trading/fig_p97_026.png",
+    "assets/stock-trading/fig_p96_025.png",
+    "assets/stock-trading/fig_p94_024_vec.png",
+    "assets/stock-trading/fig_p93_023.png",
+    "assets/stock-trading",
+    "assets",
+    "notes",
+    "notes/my-note.md",
+    "assets/my-note",
+    "notes/trade-like-a-stock-market-wizard-by-mark-minervini.md"
+  ]
+}

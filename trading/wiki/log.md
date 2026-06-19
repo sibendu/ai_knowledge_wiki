@@ -2,7 +2,7 @@
 type: log
 status: active
 created: 2026-06-13
-updated: 2026-06-18
+updated: 2026-06-19
 tags: [log]
 sources: []
 confidence: high
@@ -18,6 +18,42 @@ Append entries in reverse chronological order. Use headings that are easy to sea
 ## [YYYY-MM-DD] lint | Scope
 ## [YYYY-MM-DD] maintenance | Change Summary
 ```
+
+## [2026-06-19] ingest | Reminiscences of a Stock Operator — Edwin LeFevre (Jesse Livermore)
+
+Source folder: `raw/inbox/Reminiscences_Of_Stock_Operator/`
+(Single Markdown file, 263 pages, 0 images extracted.)
+
+Created:
+- `wiki/source-notes/2026-06-19-reminiscences-of-a-stock-operator.md`
+- `wiki/concepts/line-of-least-resistance.md`
+- `wiki/concepts/tape-reading.md`
+- `wiki/concepts/market-manipulation.md` (historical-reference page, pre-SEC mechanics)
+- `wiki/concepts/stock-group-behavior.md`
+
+Updated:
+- `wiki/entities/people/jesse-livermore.md` — added career arc from Reminiscences (bucket-shop origins, repeated ruin/recovery, May 9 1901 tape-lag lesson, 1906–07 first million, Percy Thomas disaster, later distribution campaigns); second source backlink
+- `wiki/strategies/pivotal-point-trading.md` — pivotal point as line-of-least-resistance break, buy-on-rising-scale, probe-then-pyramid, don't-force-the-move, sit-tight
+- `wiki/syntheses/livermore-trading-principles.md` — added Reminiscences principles (sitting tight / Old Turkey, big-swing money, probe, sell-loser-keep-winner, hope/fear reversal, stand aside)
+- `wiki/concepts/trading-psychology.md` — hope/fear reversal, Percy Thomas (magnetic personality), Dan Williamson (gratitude vs. judgment), the semisucker, tips as "hope cocktails"
+- `wiki/concepts/risk-management.md` — exploratory/probe sizing, always-sell-loser-keep-winner, the "sleeping point", don't-make-the-market-pay-a-bill
+- `wiki/concepts/market-structure.md` — pre-SEC historical notes (bucket shops, tape lag, pools/corners, own market impact)
+- `wiki/concepts/market-leadership.md` — group-divergence signal cross-link to new Stock Group Behavior page
+- `wiki/concepts/README.md`, `wiki/source-notes/README.md`, `wiki/index.md` — catalog the new pages and source note (source-notes README also backfilled two prior sources)
+
+Mapped:
+- New concepts: Line of Least Resistance, Tape Reading, Stock Group Behavior, Market Manipulation (historical)
+- Embedded principle: Sitting Tight / Old Turkey (in Livermore Trading Principles synthesis, per decision not to create a standalone page)
+- Existing concepts reinforced: risk management (probe sizing), trading psychology (hope/fear, magnetic-personality risk), market leadership (divergence), pivotal-point trading
+
+Linked assets:
+- None — the source folder contains no images/assets (images_extracted: 0).
+
+Needs review:
+- "Larry Livingston" is a pseudonym; book is a lightly fictionalised account of Jesse Livermore. Treated as Livermore throughout, with disclaimers on the entity and source-note pages.
+- All market mechanics are pre-SEC; manipulation page scoped as historical reference, not current-market advice.
+- Probe/line-of-least-resistance methods are 1923 anecdote, not modern backtests — follow-up questions logged in the source note.
+- Complements (does not contradict) the 1940 *How to Trade in Stocks* source already in the vault.
 
 ## [2026-06-18] ingest | Trade Like a Stock Market Wizard — Mark Minervini
 

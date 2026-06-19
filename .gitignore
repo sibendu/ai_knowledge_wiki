@@ -1,0 +1,11 @@
+# Local env files
+.env
+.env*.local
+.env.production
+
+# Virtual env
+.venv*
+__pycache__
+
+
+old

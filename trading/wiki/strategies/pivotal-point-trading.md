@@ -80,9 +80,20 @@ Livermore's examples include large historical positions and market practices tha
 
 - [Breakout After Normal Reaction](../setups/breakout-after-normal-reaction.md)
 
+## Notes From Reminiscences of a Stock Operator (LeFevre, 1923)
+
+Source: [Reminiscences of a Stock Operator](../source-notes/2026-06-19-reminiscences-of-a-stock-operator.md). The 1923 narrative supplies the *reasoning* behind the prescriptive rules in the 1940 book.
+
+- **Pivotal point = the [line of least resistance](../concepts/line-of-least-resistance.md) defining itself.** Livermore's clearest articulation of the entry trigger is waiting for price to break a established range (wheat crossing $1.20; cotton crossing its upper band). The break, not the level, is the signal.
+- **Buy on a rising scale, sell on a falling scale.** "When I am buying, I must buy on a rising scale... I don't buy long stock on a scale down." Additions are made at *higher* prices for longs (lower for shorts), confirming the original entry was correct.
+- **Probe first, then pyramid.** Commit roughly one-fifth of the intended line; if it does not show a profit, the entry is wrong — stop. The manner in which the market absorbs the probe is itself a [tape-reading](../concepts/tape-reading.md) test of the pivotal point.
+- **Do not force the move.** Repeatedly bidding a market up to "help" a break that basic conditions do not support is a documented, costly error (the cotton episode, ~$200,000 lost).
+- **Sit tight once right.** The pivotal-point entry creates the profit cushion needed to hold through normal reactions; "it never was my thinking that made the big money for me — it always was my sitting." See [Livermore Trading Principles](../syntheses/livermore-trading-principles.md).
+
 ## Source Notes
 
 - [How to Trade in Stocks - Jesse L. Livermore](../source-notes/2026-06-13-how-to-trade-in-stocks-jesse-livermore.md)
+- [Reminiscences of a Stock Operator - Edwin LeFevre (Jesse Livermore)](../source-notes/2026-06-19-reminiscences-of-a-stock-operator.md)
 
 ## Terminology Note: Minervini's Use of "Pivot Point"
 

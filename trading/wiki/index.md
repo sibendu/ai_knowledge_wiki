@@ -2,7 +2,7 @@
 type: index
 status: active
 created: 2026-06-13
-updated: 2026-06-18
+updated: 2026-06-19
 tags: [index]
 sources: []
 confidence: high
@@ -25,6 +25,7 @@ Read this page first when answering questions or ingesting sources. Update it wh
 - [How to Trade in Stocks - Jesse L. Livermore](source-notes/2026-06-13-how-to-trade-in-stocks-jesse-livermore.md) - 1940 book on pivotal points, leadership, risk, pyramiding, psychology, and records.
 - [Technical Analysis Masterclass – Sample](source-notes/2026-06-14-technical-analysis-masterclass-sample.md) - 3-page excerpt on ascending triangle breakouts, support/resistance role reversal, and RSI divergence (BTC/USD example).
 - [Trade Like a Stock Market Wizard - Mark Minervini](source-notes/2026-06-18-trade-like-a-stock-market-wizard.md) - 2013 book on SEPA strategy, Stage Analysis, VCP, Trend Template, earnings acceleration, earnings quality, and risk management.
+- [Reminiscences of a Stock Operator - Edwin LeFevre (Jesse Livermore)](source-notes/2026-06-19-reminiscences-of-a-stock-operator.md) - 1923 narrative of Livermore's education: tape reading, line of least resistance, sitting tight, probing, hope/fear, and pre-SEC manipulation.
 
 ## Entities
 
@@ -56,6 +57,10 @@ Read this page first when answering questions or ingesting sources. Update it wh
 - [Earnings Acceleration](concepts/earnings-acceleration.md) - EPS growth rate increasing quarter-over-quarter; present in ~90% of the biggest historical winners.
 - [Earnings Quality](concepts/earnings-quality.md) - Multi-dimensional earnings assessment: margins, Code 33, post-earnings drift, inventory/receivables signals.
 - [SEPA Strategy](strategies/sepa-strategy.md) - Minervini's Specific Entry Point Analysis: convergence of trend, fundamentals, RS, VCP, and market conditions.
+- [Line of Least Resistance](concepts/line-of-least-resistance.md) - Livermore's directional-break concept: trade the direction price reveals once a range breaks.
+- [Tape Reading](concepts/tape-reading.md) - Inferring price direction from the behaviour of price and volume rather than news or tips.
+- [Stock Group Behavior](concepts/stock-group-behavior.md) - Reading a stock against its group; the laggard-divergence warning signal.
+- [Market Manipulation](concepts/market-manipulation.md) - Historical (pre-SEC) distribution mechanics and the durable inside-vs-outside-buying lesson.
 
 ## Higher-Level Outputs
 
@@ -72,6 +77,10 @@ Read this page first when answering questions or ingesting sources. Update it wh
 - [Position Sizing](concepts/position-sizing.md) - Translating risk into share/contract size and capital allocation.
 - [Trading Edge](concepts/trading-edge.md) - What counts as evidence for a repeatable advantage.
 - [Trading Psychology](concepts/trading-psychology.md) - Behavioral patterns that affect execution and decision quality.
+- [Line of Least Resistance](concepts/line-of-least-resistance.md) - The direction price moves most easily; trade it once the range breaks.
+- [Tape Reading](concepts/tape-reading.md) - Reading price/volume behaviour as evidence of demand and supply.
+- [Stock Group Behavior](concepts/stock-group-behavior.md) - Group conformity and the laggard-divergence signal.
+- [Market Manipulation](concepts/market-manipulation.md) - Historical pool mechanics; reading inside vs. outside buying.
 
 ## Maintenance Notes
 

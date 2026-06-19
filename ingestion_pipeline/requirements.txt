@@ -1,0 +1,9 @@
+anthropic
+azure-identity
+google-genai
+python-dotenv
+pypdf
+pymupdf
+fitz
+frontend
+PyMuPDF

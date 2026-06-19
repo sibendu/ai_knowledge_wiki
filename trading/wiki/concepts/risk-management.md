@@ -6,6 +6,7 @@ updated: 2026-06-13
 tags: [risk, drawdown, exposure, livermore]
 sources:
   - ../source-notes/2026-06-13-how-to-trade-in-stocks-jesse-livermore.md
+  - ../source-notes/2026-06-19-reminiscences-of-a-stock-operator.md
 confidence: medium
 ---
 
@@ -77,3 +78,23 @@ At a 3:1 win/loss ratio, profitable results are achievable with only 40% winning
 - **Do not increase size to recoup losses** — this accelerates the drawdown
 
 Related pages: [Position Sizing](../concepts/position-sizing.md), [SEPA Strategy](../strategies/sepa-strategy.md), [Stage Analysis](../concepts/stage-analysis.md)
+
+## Notes From Reminiscences of a Stock Operator (LeFevre, 1923)
+
+Source: [Reminiscences of a Stock Operator](../source-notes/2026-06-19-reminiscences-of-a-stock-operator.md). These 1923-narrative observations predate and motivate the explicit rules in Livermore's 1940 book.
+
+### Probe Before Committing (Exploratory Sizing)
+
+Never put on the full line at once. Commit roughly **one-fifth** of the intended position as an exploratory bet; add only if it shows a profit. "If that does not show him a profit he must not increase his holdings because he has obviously begun wrong." The small probe losses are a cheap, deliberate cost of confirming the timing — Livermore would "chip out fifty or sixty thousand dollars in these feeling-out plays" and earn it back quickly once the real move started. This is the structural reason the method has **positive expectancy**: the big bet is only down when you are winning, and losses are confined to small exploratory bets.
+
+### Always Sell the Loser, Keep the Winner
+
+"Always sell what shows you a loss and keep what shows you a profit." The book's most painful illustration: under Percy Thomas's influence, Livermore sold his *profitable* wheat (forgoing ~$8M) and held — even added to — his *losing* cotton, eventually accumulating 440,000 bales before being nearly wiped out. **Averaging a losing game** is named "among the greatest of all speculative blunders."
+
+### The "Sleeping Point" (Size to Your Composure)
+
+Dickson G. Watts's anecdote, quoted approvingly: a man who could not sleep for worrying about his cotton was advised to "sell down to the sleeping point." Position size should be small enough that the trader can think and act clearly; an oversized position corrupts judgment.
+
+### Don't Make the Market Pay a Bill
+
+Trying to force the market to produce a specific sum by a specific date ("making the stock market pay for an overcoat") converts speculation into pure gambling — it forces an immediate-profit demand that removes patience and the line-of-least-resistance discipline. Livermore calls this resolve "the busiest and most persistent" of Wall Street hoodoos.
