@@ -2,10 +2,11 @@
 type: indicator
 status: active
 created: 2026-06-14
-updated: 2026-06-14
+updated: 2026-06-24
 tags: [indicator, momentum, oscillator, RSI, technical-analysis]
 sources:
   - raw_path: raw/inbox/sample_market_notes/notes/sample.md
+  - raw_path: raw/inbox/Technical_Analysis_For_Dummies/notes/stock-trading.md
 confidence: medium
 category: technical / momentum oscillator
 ---
@@ -72,6 +73,15 @@ The first average is a simple mean; subsequent averages use Wilder's smoothing (
 
 - Source: Technical Analysis Masterclass sample (ingested 2026-06-14) — illustrative charts on BTC/USD 4H.
 - No quantitative backtests in the vault as of 2026-06-14. Confidence: medium (introductory source only).
+
+## RSI in Multi-Indicator Systems (TA4D, 2020)
+
+- **RSI vs. Stochastic:** RSI uses closing prices only; Stochastic uses H, L, and C — "the rest of the price bar." RSI is less prone to whipsaw in trending markets; Stochastic is more sensitive and better suited to range-bound conditions (source: TA4D 2020, Ch. 13).
+- **Divergence confirmation:** MACD histogram divergence + RSI divergence both present simultaneously = higher-confidence reversal warning than either alone (source: TA4D 2020, Ch. 13).
+- **Validator role:** RSI commonly used as a validator indicator to confirm or deny moving average signals; when RSI diverges from the MA signal, re-examine the trade before entering (source: TA4D 2020, Ch. 13).
+- **Extended overbought/oversold:** in strong trends RSI can remain above 70 (or below 30) for extended periods — an overbought reading alone is not a sell signal; require a second signal for confirmation (source: TA4D 2020, Ch. 13).
+
+Source: [TA4D](../source-notes/2026-06-24-technical-analysis-for-dummies.md)
 
 ## Related Strategies / Setups
 

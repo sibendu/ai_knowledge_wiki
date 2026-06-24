@@ -17,3 +17,10 @@ The vault has three layers:
 5. Periodically ask for a lint pass to find contradictions, stale claims, orphan pages, and missing source coverage.
 
 This vault is for research and education. Treat all trading-related conclusions as hypotheses unless they are supported by cited evidence, dated market context, and risk analysis.
+
+## Sample Instruction
+
+/preprocessed-pdf-wiki-ingest Ingest `raw/inbox/<folder>/` into this trading wiki. 
+First produce the Proposed Ingest Plan and wait for my confirmation before creating or updating any wiki files. 
+Preserve all raw image/asset links appropriately.
+

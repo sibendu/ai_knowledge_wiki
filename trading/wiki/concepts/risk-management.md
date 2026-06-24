@@ -2,11 +2,12 @@
 type: concept
 status: active
 created: 2026-06-13
-updated: 2026-06-13
-tags: [risk, drawdown, exposure, livermore]
+updated: 2026-06-24
+tags: [risk, drawdown, exposure, livermore, stop-loss, trade-management]
 sources:
   - ../source-notes/2026-06-13-how-to-trade-in-stocks-jesse-livermore.md
   - ../source-notes/2026-06-19-reminiscences-of-a-stock-operator.md
+  - ../source-notes/2026-06-24-technical-analysis-for-dummies.md
 confidence: medium
 ---
 
@@ -76,6 +77,43 @@ At a 3:1 win/loss ratio, profitable results are achievable with only 40% winning
 - Exit all margin positions immediately during confirmed market deterioration
 - Scale back gradually until results improve; then restore size incrementally
 - **Do not increase size to recoup losses** — this accelerates the drawdown
+
+## Five-Step Trading Plan (TA4D, 2020)
+
+Source: [TA4D](../source-notes/2026-06-24-technical-analysis-for-dummies.md), Chapter 5.
+
+1. **Determine whether a trend exists** — trend-following indicators are unreliable without a trend; no trend = no trade
+2. **Establish entry rules** — entry timing matters as much as security selection; getting in at the right price sets the ceiling on ultimate profit
+3. **Manage money at risk by scaling** — add to winning positions, reduce losers; the most profitable futures managers cite this as most important
+4. **Establish exit rules — set stops and targets** — paramount for anyone moving from buy-and-hold thinking; you must know your stop before entering
+5. **Establish a reentry rule** — after being stopped out in an ongoing macro trend, reentry rules are different from fresh entries; already-trending security has different context
+
+## Stop-Loss Types (TA4D, 2020)
+
+Source: [TA4D](../source-notes/2026-06-24-technical-analysis-for-dummies.md), Chapter 5.
+
+| Stop Type | Description | Verdict |
+|-----------|-------------|---------|
+| Mental stop | "I'll sell in my head when it hits X" | Avoid — proven self-delusion; almost never executed properly |
+| Hard stop | Order placed with broker at entry | Mandatory minimum |
+| Trailing stop | Moves in direction of trade; locks in gains | Good for trend following |
+| Parabolic SAR | Accelerates and tightens as trend matures | Good for exits in maturing moves |
+| ATR-based stop | Entry ± (ATR × multiplier); adapts to volatility | Best practice for stop sizing |
+
+## Recovery Table
+
+A 50% loss requires a 100% gain to recover. (source: TA4D 2020)
+
+| Loss | Gain Needed to Recover |
+|------|----------------------|
+| 10% | 11.1% |
+| 20% | 25.0% |
+| 30% | 42.9% |
+| 40% | 66.7% |
+| 50% | 100.0% |
+| 75% | 300.0% |
+
+See [Average True Range](../indicators/average-true-range.md) for ATR-based stop construction.
 
 Related pages: [Position Sizing](../concepts/position-sizing.md), [SEPA Strategy](../strategies/sepa-strategy.md), [Stage Analysis](../concepts/stage-analysis.md)
 

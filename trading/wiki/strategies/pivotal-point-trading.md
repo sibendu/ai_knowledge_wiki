@@ -2,7 +2,7 @@
 type: strategy
 status: active
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-24
 tags: [strategy, pivotal-points, trend-following, livermore]
 sources:
   - ../source-notes/2026-06-13-how-to-trade-in-stocks-jesse-livermore.md
@@ -13,6 +13,8 @@ regimes: [trending, leadership, post-consolidation]
 ---
 
 # Pivotal Point Trading
+
+> **Disambiguation:** "Pivotal point" here refers to Jesse Livermore's concept of a key price level that signals directional conviction and marks the ideal entry. This is unrelated to the mathematical **Pivot Points** indicator (PP = (H+L+C)/3 formula, with R1–R3/S1–S3 support/resistance zones) used in day trading — see [TA4D Pivot Points](../indicators/ta4d-pivot-points.md).
 
 ## Hypothesis
 

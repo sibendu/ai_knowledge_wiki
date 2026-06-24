@@ -137,7 +137,8 @@ class PDFExtractor:
         doc = page.parent
         for img_info in page.get_images(full=True):
             xref = img_info[0]
-            img_block = self._extract_raster_image(doc, page, xref, page_num, counter)
+            smask = img_info[1] if len(img_info) > 1 else 0
+            img_block = self._extract_raster_image(doc, page, xref, smask, page_num, counter)
             if img_block:
                 blocks.append(img_block)
 
@@ -174,6 +175,7 @@ class PDFExtractor:
         doc: fitz.Document,
         page: fitz.Page,
         xref: int,
+        smask: int,
         page_num: int,
         counter: list,
     ) -> Optional[ImageBlock]:
@@ -182,16 +184,24 @@ class PDFExtractor:
             base_image = doc.extract_image(xref)
             image_bytes = base_image["image"]
             ext = base_image.get("ext", "png")
+            width = base_image.get("width", 0)
+            height = base_image.get("height", 0)
+
+            # Soft masks must be composited; raw PNG bytes can show transparent white as black.
+            if smask:
+                pix = fitz.Pixmap(doc, xref)
+                pix = fitz.Pixmap(pix, fitz.Pixmap(doc, smask))
+                pix = self._flatten_alpha_to_white(pix)
+                image_bytes = pix.tobytes("png")
+                width = pix.width
+                height = pix.height
 
             # Convert non-PNG to PNG via pixmap
-            if ext.lower() not in ("png", "jpg", "jpeg"):
+            elif ext.lower() not in ("png", "jpg", "jpeg"):
                 pix = fitz.Pixmap(doc, xref)
                 if pix.n > 4:  # CMYK → RGB
                     pix = fitz.Pixmap(fitz.csRGB, pix)
                 image_bytes = pix.tobytes("png")
-
-            width = base_image.get("width", 0)
-            height = base_image.get("height", 0)
 
             if width < MIN_IMAGE_WIDTH or height < MIN_IMAGE_HEIGHT:
                 return None
@@ -221,6 +231,33 @@ class PDFExtractor:
             )
         except Exception:
             return None
+
+    def _flatten_alpha_to_white(self, pix: fitz.Pixmap) -> fitz.Pixmap:
+        """Return an RGB pixmap composited over a white background."""
+        if not pix.alpha:
+            if pix.n > 4:
+                return fitz.Pixmap(fitz.csRGB, pix)
+            return pix
+
+        if pix.n != 4:
+            pix = fitz.Pixmap(fitz.csRGB, pix)
+
+        width = pix.width
+        height = pix.height
+        samples = pix.samples
+        channels = pix.n
+        rgb = bytearray(width * height * 3)
+        out_pos = 0
+
+        for in_pos in range(0, len(samples), channels):
+            alpha = samples[in_pos + channels - 1]
+            inverse_alpha = 255 - alpha
+            rgb[out_pos] = (samples[in_pos] * alpha + 255 * inverse_alpha) // 255
+            rgb[out_pos + 1] = (samples[in_pos + 1] * alpha + 255 * inverse_alpha) // 255
+            rgb[out_pos + 2] = (samples[in_pos + 2] * alpha + 255 * inverse_alpha) // 255
+            out_pos += 3
+
+        return fitz.Pixmap(fitz.csRGB, width, height, bytes(rgb), False)
 
     def _get_image_bbox(self, page: fitz.Page, xref: int) -> tuple:
         """Find the bounding box of an image on the page."""

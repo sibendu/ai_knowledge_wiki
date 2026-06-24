@@ -11,14 +11,10 @@
             "id": "c67e06c0e17618ec",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "concepts/stock-group-behavior.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "stock-group-behavior"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -53,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "pivot",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,7 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 461.5
   },
   "right": {
     "id": "1042ee2c6964dd3b",
@@ -183,20 +179,36 @@
       "bases:Create new base": false
     }
   },
-  "active": "c67e06c0e17618ec",
+  "active": "4d2190ba1d8ca36e",
   "lastOpenFiles": [
-    "log.md.tmp.1719.a321f8566fe4",
-    "log.md.tmp.1719.87fa72aa5108",
-    "source-notes/README.md.tmp.1719.fc8bc39430d4",
-    "index.md.tmp.1719.4e18848e35de",
-    "index.md.tmp.1719.2d10f00c9897",
-    "index.md.tmp.1719.f0bd8a7d9fff",
-    "index.md.tmp.1719.be9f9133b153",
-    "concepts/README.md.tmp.1719.5ea667d02842",
-    "concepts/README.md.tmp.1719.5d6d0b5b4919",
-    "concepts/market-structure.md.tmp.1719.0e45e2e8b6c8",
-    "concepts/trading-psychology.md.tmp.1719.aec4e2bf3927",
+    "strategies/pivotal-point-trading.md",
+    "indicators/ta4d-pivot-points.md",
     "concepts/stock-group-behavior.md",
+    "log.md.tmp.54761.dcc65929fde2",
+    "index.md.tmp.54761.61070a8e4dcb",
+    "index.md.tmp.54761.12fc94d8c8d5",
+    "index.md.tmp.54761.a6003c7aace7",
+    "index.md.tmp.54761.37f2cb141485",
+    "source-notes/2026-06-24-technical-analysis-for-dummies.md",
+    "source-notes/2026-06-24-technical-analysis-for-dummies.md.tmp.54761.e2be4fed373d",
+    "concepts/stage-analysis.md.tmp.54761.da861801b543",
+    "glossary.md.tmp.54761.50f121b5d2da",
+    "setups/ascending-triangle-breakout.md.tmp.54761.24c976ccb09d",
+    "strategies/pivotal-point-trading.md.tmp.54761.f735263b602e",
+    "entities/people/barbara-rockefeller.md",
+    "concepts/price-bars.md",
+    "concepts/point-and-figure.md",
+    "concepts/ichimoku.md",
+    "concepts/chart-patterns.md",
+    "concepts/dow-theory.md",
+    "concepts/candlestick-charting.md",
+    "concepts/volume-analysis.md",
+    "concepts/trendlines-channels.md",
+    "indicators/average-true-range.md",
+    "indicators/stochastic-oscillator.md",
+    "indicators/moving-averages.md",
+    "indicators/bollinger-bands.md",
+    "indicators/macd.md",
     "concepts/market-manipulation.md",
     "concepts/tape-reading.md",
     "concepts/line-of-least-resistance.md",

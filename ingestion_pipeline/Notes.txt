@@ -1,44 +1,4 @@
-python stage1_extract.py  -.pdf
-python stage2_generate_imagedesc.py --input ./stage1_out --provider ollama
-python stage3_assemble.py --input ./stage1_out --vault ./test_vault --title "Stock Trading"
-
-=========================
-
-the input .md file had linked image assets and also AI generated descriptions of those assets. I want those images to be references appropriately in the vault artifacts you generated (concepts, strategies etc.) as the images/description hold important contextual information without which the knowledge is incomplete, inferior. Can you please import those assets into the wiki and create suitable backlinks?
-
-
-Convert the PDF at raw/inbox/[filename].pdf to a structured markdown file at raw/inbox/[filename].md. Preserve ALL text verbatim. Convert tables to markdown tables. Add YAML frontmatter with: source-title, source-type (report/article/book/transcript/filing), suggested-raw-folder, author, publication-date, tickers-mentioned (all tickers found), topics-present (all trading topics found — indicator names, strategy names, concepts — just names, no analysis), page-count. Add explicit section headers matching the PDF's structure. Note figures as [FIGURE N: caption text]. Do not summarize, interpret, or omit any content.
-
-
-Ingest raw/inbox/2025-11-10-momentum-strategies.md. It's a pre-processed source — the frontmatter has already identified tickers and topics. Use topics-present to load relevant wiki pages before starting.
-
-
-
-Convert the document provided above to structured markdown.
-
-
-Convert the PDF at raw/inbox/Trade_Like_a_Stock_Market_Wizard_part1.pdf to a structured markdown file at raw/inbox/Trade_Like_a_Stock_Market_Wizard_part1.md
-
-Rules (strict):
-1. Preserve ALL text verbatim. Never omit, compress, or paraphrase any content.
-2. Map section headings to markdown headers matching the source hierarchy.
-3. Convert every table to markdown table format — all rows and columns preserved.
-4. For figures/charts write: [FIGURE N: <verbatim caption if present>. <1-sentence visual description>]
-5. Preserve bullet and numbered lists as-is.
-
-Prepend YAML frontmatter with exactly these fields:
-  source-title:          (exact title)
-  source-type:           (one of: article | book | filing | report | transcript | data | chart)
-  suggested-raw-folder:  (one of: raw/articles | raw/books | raw/filings | raw/reports | raw/transcripts | raw/data | raw/charts)
-  author:                (full name(s) or "unknown")
-  publication-date:      (YYYY-MM-DD or "unknown")
-  tickers-mentioned:     [every ticker symbol found, e.g. AAPL, SPY, QQQ]
-  topics-present:        [all trading topics: strategy names, indicator names, concepts, risk terms — names only, no descriptions]
-  page-count:            (integer or null)
-  conversion-model:      claude-haiku-4-5
-
-Output only the markdown document. No preamble, no commentary after the document.
-
+/preprocessed-pdf-wiki-ingest Ingest `raw/inbox/Technical_Analysis_For_Dummies/` into this trading wiki. First produce the Proposed Ingest Plan and wait for my confirmation before creating or updating any wiki files. Preserve all raw image/asset links.
 
 ******************
 

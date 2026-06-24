@@ -2,10 +2,11 @@
 type: setup
 status: active
 created: 2026-06-14
-updated: 2026-06-14
-tags: [setup, breakout, ascending-triangle, volume-confirmation, RSI, technical-analysis]
+updated: 2026-06-24
+tags: [setup, breakout, ascending-triangle, volume-confirmation, RSI, technical-analysis, false-breakout, volatility-contraction]
 sources:
   - raw_path: raw/inbox/sample_market_notes/notes/sample.md
+  - raw_path: raw/inbox/Technical_Analysis_For_Dummies/notes/stock-trading.md
 confidence: medium
 timeframe: 4H (demonstrated); applicable to daily and weekly with higher confidence
 instruments: [equities, crypto, futures]
@@ -85,6 +86,20 @@ Illustrated on BTC/USD 4H chart in the Technical Analysis Masterclass sample (in
 ## Source Notes
 
 - [Technical Analysis Masterclass – Sample](../source-notes/2026-06-14-technical-analysis-masterclass-sample.md)
+
+## Breakout Confirmation Rules (TA4D, 2020)
+
+Authentic breakouts require more evidence than a single bar piercing resistance:
+
+1. **Close filter:** require the breakout bar to CLOSE above resistance — intraday highs that fail to hold are common noise (source: TA4D 2020, p. 277)
+2. **Volume filter:** upside breakout on rising volume = demand confirmed; volume drying up during the base formation itself is also a positive sign (all sellers have transacted) (source: TA4D 2020, p. 277–278)
+3. **Size filter:** require price to clear resistance by at least x% (e.g. 5%) before acting — prevents false positives from trivial breaches (source: TA4D 2020, p. 278)
+4. **Duration filter:** require 2–3 bars of sustained close above resistance — filters one-day accidents (source: TA4D 2020, p. 278–279)
+5. **Orderliness bonus:** breakout from a tight, low-volatility base is more reliable than from a choppy, high-volatility one; volatility contraction before breakout = positive sign (aligns with [VCP](../setups/volatility-contraction-pattern.md)) (source: TA4D 2020, p. 280)
+
+Trade-off: more filters = later entry at worse price in exchange for fewer false breakouts. Match filter aggressiveness to your risk tolerance and the historical habits of the security. (source: TA4D 2020, p. 278–279)
+
+See also: [TA4D](../source-notes/2026-06-24-technical-analysis-for-dummies.md)
 
 ## Related Pages
 

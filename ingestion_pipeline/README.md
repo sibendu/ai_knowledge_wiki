@@ -113,7 +113,7 @@ Useful options:
 ## Stage 3: Assemble Obsidian Note
 
 ```bash
-python stage3_assemble.py --input ./stage1_out --vault ./ai_knowledgewiki_ingestion_vault --title "My Note"
+python stage3_assemble.py --input ./stage1_out --vault ./stage3_out --title "Stock Trading"
 ```
 
 This writes:

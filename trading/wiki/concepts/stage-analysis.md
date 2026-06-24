@@ -2,10 +2,11 @@
 type: concept
 status: active
 created: 2026-06-18
-updated: 2026-06-18
+updated: 2026-06-24
 tags: [stage-analysis, trend, market-cycle, stock-lifecycle, weinstein, minervini]
 sources:
   - ../source-notes/2026-06-18-trade-like-a-stock-market-wizard.md
+  - ../source-notes/2026-06-24-technical-analysis-for-dummies.md
 confidence: medium
 ---
 
@@ -155,6 +156,30 @@ Stage Analysis uses moving averages diagnostically (to confirm which stage a sto
 - Misreading early Stage 3 volatility as a buying opportunity within Stage 2
 - Ignoring the base count and buying late-Stage 2 situations as aggressively as early ones
 - Using moving average crossovers alone without checking the full configuration
+
+## Historical Antecedent: The Wyckoff Model
+
+Richard Wyckoff (1873–1934) was an early 20th century market analyst and educator who studied supply-and-demand cycles empirically across thousands of trades. His model describes four repeating phases driven by the behaviour of informed/institutional money ("the composite operator") (source: TA4D 2020):
+
+1. **Accumulation** — sideways, low-volatility phase; smart money buying gradually while public disinterest keeps prices depressed; corresponds to Stage 1 in modern usage
+2. **Mark-up** — price advances as institutional buying continues and public interest grows; corresponds to Stage 2
+3. **Distribution** — sideways, high-volatility phase at tops; smart money selling into public enthusiasm; corresponds to Stage 3
+4. **Mark-down** — price declines as supply overwhelms demand; corresponds to Stage 4
+
+**Wyckoff key concepts:**
+- **Spring:** final false downside move at the end of accumulation — shakes out weak holders before the real advance begins
+- **Upthrust:** final false upside move at the end of distribution — traps late buyers before the real decline begins
+- **Composite operator:** the aggregate behaviour of informed/institutional money; reading the tape reveals their intentions
+
+Stan Weinstein's four-stage model (*Secrets for Profiting in Bull and Bear Markets*, 1988) is the modern operationalisation of Wyckoff's cycle with specific moving average criteria. Mark Minervini's Stage Analysis is in turn a refinement of Weinstein. The conceptual lineage is: Wyckoff → Weinstein → Minervini.
+
+![Wyckoff Model diagram](../../raw/inbox/Technical_Analysis_For_Dummies/assets/stock-trading/fig_p415_093.png)
+
+*Figure 17-2 from TA4D: The Wyckoff Model — sinusoidal price cycle labelled Accumulation, Mark-up, Distribution, and Mark-down, driven by supply and demand dynamics (source: TA4D 2020).*
+
+Note: TA4D covers Wyckoff briefly as one of several cycle theories. For deeper treatment, Wyckoff's original writings remain the primary source (not yet ingested in this vault). See [TA4D](../source-notes/2026-06-24-technical-analysis-for-dummies.md) for the chapter context (Chapter 17, "Cycling with Supply and Demand").
+
+---
 
 ## Related Pages
 

@@ -2,7 +2,7 @@
 type: log
 status: active
 created: 2026-06-13
-updated: 2026-06-19
+updated: 2026-06-24
 tags: [log]
 sources: []
 confidence: high
@@ -18,6 +18,55 @@ Append entries in reverse chronological order. Use headings that are easy to sea
 ## [YYYY-MM-DD] lint | Scope
 ## [YYYY-MM-DD] maintenance | Change Summary
 ```
+
+## [2026-06-24] ingest | Technical Analysis For Dummies — Barbara Rockefeller (4th Ed, 2020)
+
+Source folder: `raw/inbox/Technical_Analysis_For_Dummies/`
+(536 pages, 104 images extracted)
+
+Created:
+- `wiki/source-notes/2026-06-24-technical-analysis-for-dummies.md`
+- `wiki/entities/people/barbara-rockefeller.md`
+- `wiki/indicators/moving-averages.md`
+- `wiki/indicators/macd.md`
+- `wiki/indicators/bollinger-bands.md`
+- `wiki/indicators/average-true-range.md`
+- `wiki/indicators/stochastic-oscillator.md`
+- `wiki/indicators/ta4d-pivot-points.md`
+- `wiki/concepts/dow-theory.md`
+- `wiki/concepts/price-bars.md`
+- `wiki/concepts/candlestick-charting.md`
+- `wiki/concepts/chart-patterns.md`
+- `wiki/concepts/trendlines-channels.md`
+- `wiki/concepts/volume-analysis.md`
+- `wiki/concepts/ichimoku.md`
+- `wiki/concepts/point-and-figure.md`
+
+Updated:
+- `wiki/concepts/support-resistance.md` — breakout authentication rules
+- `wiki/concepts/market-structure.md` — auction model, crowd dynamics
+- `wiki/concepts/risk-management.md` — 5-step plan, stop taxonomy, recovery table
+- `wiki/concepts/trading-psychology.md` — loss denial, guru trap, business mindset
+- `wiki/concepts/trading-edge.md` — expectancy, confirmation principle, backtesting
+- `wiki/indicators/rsi.md` — stochastic comparison, multi-indicator context
+- `wiki/setups/ascending-triangle-breakout.md` — breakout confirmation rules
+- `wiki/concepts/stage-analysis.md` — Wyckoff historical antecedent section
+- `wiki/strategies/pivotal-point-trading.md` — disambiguation notice
+- `wiki/glossary.md` — 10 new entries
+
+Mapped:
+- New indicator methodology: Moving Averages (SMA/EMA/ribbon/crossover), MACD (12/26/9), Bollinger Bands (squeeze/walk), ATR (true range/stop sizing), Stochastic (%K/%D/divergence), TA4D Pivot Points (PP formula, R1-R3/S1-S3)
+- New concepts: Dow Theory (foundational TA), Price Bars (OHLC/special bars/gaps), Candlestick Charting (doji/hammer/engulfing), Chart Patterns (triangles/H&S/double tops/measured moves), Trendlines & Channels (regression/breakout authentication/orderliness), Volume Analysis (OBV/divergence/spikes), Ichimoku (Hosoda five-component system), Point & Figure (X/O/projections)
+- Wyckoff model embedded in stage-analysis as historical antecedent of Weinstein/Minervini Stage Analysis
+- Pivot-point disambiguation resolved: Livermore "Pivotal Point" (strategy) vs TA4D "Pivot Points" (formula indicator)
+
+Linked assets (key images):
+- fig_p201_029.png (candlestick anatomy), fig_p203_030.png (doji types), fig_p205_031.png (shaven bars), fig_p276_056.png (false breakout), fig_p280_057.png (orderly vs disorderly), fig_p285_059.png (pivot formulas), fig_p312_065.png (MA crossover), fig_p315_066.png (three MA), fig_p316_067.png (MA ribbon), fig_p319_068.png (MACD C/D), fig_p320_069.png (MACD indicator), fig_p321_070.png (MACD histogram), fig_p344_075.png (bullish divergence), fig_p358_080.png (Bollinger), fig_p360_081.png (ATR bands), fig_p379_085.png (P&F patterns), fig_p383_086.png (P&F vertical projection), fig_p410_092.png (Wyckoff model), fig_p433_096_vec.png (Ichimoku terms), fig_p446_105_vec.png (Ichimoku comparison)
+
+Needs review:
+- All market performance statistics (S&P returns, timer performance, JP Morgan quant AUM) are as of 2020 or earlier — marked stale
+- Elliott Wave, Gann, Hurst cycles given introductory treatment only — deeper sources not yet ingested
+- Barbara Rockefeller entity page is seed status (limited biographical detail)
 
 ## [2026-06-19] ingest | Reminiscences of a Stock Operator — Edwin LeFevre (Jesse Livermore)
 

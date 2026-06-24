@@ -2,11 +2,12 @@
 type: concept
 status: active
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-24
 tags: [psychology, execution, behavior, livermore]
 sources:
   - ../source-notes/2026-06-13-how-to-trade-in-stocks-jesse-livermore.md
   - ../source-notes/2026-06-19-reminiscences-of-a-stock-operator.md
+  - ../source-notes/2026-06-24-technical-analysis-for-dummies.md
 confidence: medium
 ---
 
@@ -60,6 +61,17 @@ Minervini distinguishes between *interest* (starting) and *commitment* (persisti
 Paper trading (simulating trades without real money) does not develop the emotional circuits needed for real-money trading under financial pressure. Without real consequences, decisions are made without the emotional weight that accompanies actual losses. Recommendation: trade with real money — small but real — as soon as possible. The experience of feeling a real loss is irreplaceable.
 
 Related pages: [Risk Management](../concepts/risk-management.md), [Trading Edge](../concepts/trading-edge.md)
+
+## TA4D Insights on Trading Psychology (2020)
+
+Source: [Technical Analysis for Dummies](../source-notes/2026-06-24-technical-analysis-for-dummies.md) (source: TA4D 2020).
+
+- **"Rather be right than make money":** the single biggest character flaw per brokers/advisors — ego prioritized over profit leads traders to hold losers hoping to be vindicated rather than cutting losses (source: TA4D 2020, Ch. 19)
+- **Loss denial:** "It will come back!" — statistically known to compound losses; by the time it recovers you may be broke (source: TA4D 2020, Ch. 5)
+- **Trading as a business:** non-emotional, rule-based execution; you cannot control the market — only yourself and your rules (source: TA4D 2020, Ch. 19)
+- **Self-discovery is unavoidable:** selecting indicators is partly discovering your own risk tolerance; the process cannot be shortcut by adopting someone else's system, which was built for their risk appetite, not yours (source: TA4D 2020, Ch. 19)
+- **Guru trap:** the "magic indicator that never fails" is a red flag; any genuine edge would not be sold cheaply. The only exception: a guru with full indicator disclosure AND a verified 5+ year real-time track record — almost none qualify (source: TA4D 2020, Ch. 20)
+- **Indicator addiction:** new indicators are seductive; always verify a new indicator "plays well" with existing ones before adopting. Popularity of an indicator creates self-fulfilling effects — worth knowing what the crowd is watching (source: TA4D 2020, Ch. 19–20)
 
 ## Notes From Reminiscences of a Stock Operator (LeFevre, 1923)
 

@@ -2,10 +2,11 @@
 type: concept
 status: active
 created: 2026-06-14
-updated: 2026-06-14
+updated: 2026-06-24
 tags: [concept, support, resistance, price-action, technical-analysis, role-reversal]
 sources:
   - raw_path: raw/inbox/sample_market_notes/notes/sample.md
+  - ../source-notes/2026-06-24-technical-analysis-for-dummies.md
 confidence: medium
 ---
 
@@ -65,6 +66,20 @@ Role reversal is considered **confirmed** when price pulls back to the former re
 - Confusing minor intraday levels with major structural levels; weight significance by timeframe, number of prior touches, and recency.
 - Entering on a breakout without confirming volume; low-volume breakouts fail more often.
 - Ignoring role reversal as a re-entry opportunity after a missed breakout.
+
+## Breakout Authentication (TA4D, 2020)
+
+Breakouts from S/R levels require authentication before acting. From TA4D:
+
+- **Close filter:** Wait for price to CLOSE beyond the level, not just print a high or low there — closes are less random than intraday extremes
+- **Volume filter:** Authentic upside breakouts are usually accompanied by a volume increase; volume drying up before a base breakout is also a confirming signal (all buyers/sellers have transacted)
+- **Size filter:** Require price to clear the level by a minimum percentage (e.g. 5%) — avoids acting on trivial breaches
+- **Duration filter:** Require the breach to persist for 2–3 bars — filters single-day accidents
+- **Orderliness bonus:** Breakout from a low-volatility (orderly) base is more reliable than from a choppy base
+
+Trading range definition: the "normal" price range between established S/R is where supply and demand are in equilibrium (source: TA4D 2020). A violation requiring explanation is a breakout.
+
+See also: [TA4D Pivot Points](../indicators/ta4d-pivot-points.md) for formula-based intraday S/R zones.
 
 ## Related Pages
 

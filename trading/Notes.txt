@@ -1,0 +1,16 @@
+from claude_code_sdk import ClaudeAgent, ClaudeAgentOptions
+
+# Define telemetry variables explicitly
+telemetry_env = {
+    "CLAUDE_CODE_ENABLE_TELEMETRY": "1",
+    "OTEL_LOGS_EXPORTER": "otlp",
+    "OTEL_EXPORTER_OTLP_PROTOCOL": "grpc",
+    "OTEL_EXPORTER_OTLP_ENDPOINT": "http://localhost:4317"
+}
+
+# Merge or explicitly assign settings to options
+options = ClaudeAgentOptions(env=telemetry_env)
+agent = ClaudeAgent(options=options)
+
+# Triggers underlying process execution and generates OTel events
+response = agent.query("Analyze the file structure of this directory.")
