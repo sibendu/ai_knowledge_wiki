@@ -11,10 +11,14 @@
             "id": "c67e06c0e17618ec",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "watchlist.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "watchlist"
             }
           }
         ]
@@ -181,6 +185,9 @@
   },
   "active": "4d2190ba1d8ca36e",
   "lastOpenFiles": [
+    "trade-journal/analysis/2026-06/2026-06-25-swing-review.md",
+    "concepts/stage-analysis.md",
+    "watchlist.md",
     "strategies/pivotal-point-trading.md",
     "indicators/ta4d-pivot-points.md",
     "concepts/stock-group-behavior.md",

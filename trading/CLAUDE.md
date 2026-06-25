@@ -73,7 +73,10 @@ wiki/                Generated knowledge layer (edit freely).
   comparisons/       Side-by-side analyses.
   syntheses/         Higher-level answers and evolving theses.
   questions/         Open research questions and investigation trails.
-  trade-journal/     LLM-written trade reviews and lesson summaries.
+  watchlist.md       Living swing-trade monitoring dashboard. Read when asked "which stocks to check today/this week?"
+  trade-journal/     LLM-written analysis sessions and trade records.
+    analysis/        Pre-trade chart analysis sessions. One page per day. Month subfolders: YYYY-MM/.
+    trades/          Actual trade records and post-trade reviews. Month subfolders: YYYY-MM/.
   _templates/        Page templates to copy when creating new pages.
 ```
 
@@ -100,7 +103,7 @@ confidence: low
 ---
 ```
 
-- `type` values: `index`, `log`, `source-note`, `company`, `person`, `institution`, `concept`, `strategy`, `indicator`, `setup`, `sector`, `instrument`, `comparison`, `synthesis`, `question`, `trade-review`, `lint-report`.
+- `type` values: `index`, `log`, `source-note`, `company`, `person`, `institution`, `concept`, `strategy`, `indicator`, `setup`, `sector`, `instrument`, `comparison`, `synthesis`, `question`, `trade-review`, `chart-analysis`, `watchlist`, `lint-report`.
 - `status` values: `seed` (scaffold), `active` (useful and sourced), `needs-review` (uncertainty/contradictions/missing citations), `stale` (likely outdated, needs current verification).
 - Copy from `wiki/_templates/` when creating a new page of a given type.
 
@@ -149,6 +152,25 @@ Append entries in reverse chronological order, using search-friendly headings:
 ## [YYYY-MM-DD] query | Question Summary
 ## [YYYY-MM-DD] lint | Scope
 ## [YYYY-MM-DD] maintenance | Change Summary
+```
+
+## Chart analysis workflow
+
+When the user submits a chart image for swing-trade assessment:
+
+1. Identify the instrument (ticker, type: stock/ETF/index ETF, exchange).
+2. Apply [Stage Analysis](wiki/concepts/stage-analysis.md): determine which of the four stages the instrument is in.
+3. Run a Trend Template check: evaluate all 8 criteria against the visible chart structure.
+4. Identify key price levels: prior high, resistance zones, current price, support zones, crash low.
+5. Calculate risk/reward for at least two entry scenarios (current price, pullback, breakout).
+6. Deliver a verdict: Strong Avoid / Watchlist / Conditional / Setup / Strong Setup.
+7. After the session, create (or append to today's) analysis page: `wiki/trade-journal/analysis/YYYY-MM/YYYY-MM-DD-swing-review.md`.
+8. Update `wiki/watchlist.md`: add/update rows for each instrument; set check-back dates.
+9. Append a `chart-analysis` entry to `wiki/log.md`.
+
+Log heading format for chart analysis:
+```markdown
+## [YYYY-MM-DD] chart-analysis | Tickers Reviewed
 ```
 
 ## Page quality bar

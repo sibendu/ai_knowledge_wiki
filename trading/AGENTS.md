@@ -70,7 +70,10 @@ wiki/
   comparisons/       Side-by-side analyses.
   syntheses/         Higher-level answers and evolving theses.
   questions/         Open research questions and investigation trails.
-  trade-journal/     LLM-written trade reviews and lesson summaries.
+  watchlist.md       Living swing-trade monitoring dashboard. Read when asked "which stocks to check today/this week?"
+  trade-journal/     LLM-written analysis sessions and trade records.
+    analysis/        Pre-trade chart analysis sessions. One page per day. Month subfolders: YYYY-MM/.
+    trades/          Actual trade records and post-trade reviews. Month subfolders: YYYY-MM/.
   _templates/        Page templates to copy when creating new pages.
 ```
 
@@ -117,6 +120,8 @@ Recommended `type` values:
 - `synthesis`
 - `question`
 - `trade-review`
+- `chart-analysis`
+- `watchlist`
 - `lint-report`
 
 Recommended `status` values:
@@ -166,6 +171,25 @@ When asked to lint or health-check the vault:
 - Recommend new sources or questions that would improve the wiki.
 - Save durable lint results under `wiki/syntheses/` or `wiki/questions/` when useful.
 - Append a `lint` entry to `wiki/log.md`.
+
+## Chart Analysis Workflow
+
+When the user submits a chart image for swing-trade assessment:
+
+1. Identify the instrument (ticker, type: stock/ETF/index ETF, exchange).
+2. Apply Stage Analysis: determine which of the four stages the instrument is in.
+3. Run a Trend Template check: evaluate all 8 criteria against the visible chart structure.
+4. Identify key price levels: prior high, resistance zones, current price, support zones, crash low.
+5. Calculate risk/reward for at least two entry scenarios (current price, pullback, breakout).
+6. Deliver a verdict: Strong Avoid / Watchlist / Conditional / Setup / Strong Setup.
+7. After the session, create (or append to today's) analysis page: `wiki/trade-journal/analysis/YYYY-MM/YYYY-MM-DD-swing-review.md`.
+8. Update `wiki/watchlist.md`: add/update rows for each instrument; set check-back dates.
+9. Append a `chart-analysis` entry to `wiki/log.md`.
+
+Log heading format for chart analysis:
+```markdown
+## [YYYY-MM-DD] chart-analysis | Tickers Reviewed
+```
 
 ## Page Quality Bar
 

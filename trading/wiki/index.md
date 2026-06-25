@@ -82,8 +82,18 @@ Read this page first when answering questions or ingesting sources. Update it wh
 
 - [Comparisons](comparisons/README.md) - Side-by-side analyses.
 - [Syntheses](syntheses/README.md) - Durable answers, theses, memos, and integrated views.
-- [Trade Journal](trade-journal/README.md) - LLM-written trade reviews and recurring lessons derived from raw logs.
+- [Trade Journal](trade-journal/README.md) - Analysis sessions and trade records; month-organized subfolders.
+  - [Analysis](trade-journal/analysis/) - Pre-trade chart analysis sessions (one page per day).
+  - [Trades](trade-journal/trades/) - Actual trade records and post-trade reviews.
 - [Livermore Trading Principles](syntheses/livermore-trading-principles.md) - Durable synthesis of principles from `How to Trade in Stocks`.
+
+## Active Monitoring
+
+- [Watchlist](watchlist.md) — Living dashboard of instruments under swing-trade monitoring. Read this when asked "which stocks should I check today/this week?"
+
+## Recent Analysis Sessions
+
+- [2026-06-25 Swing Review](trade-journal/analysis/2026-06/2026-06-25-swing-review.md) — Bajaj Holdings, BANKBEES, NIFTYBEES, HUL. All Stage 4 or transitioning. ETFs conditional (wait for pullback/breakout); HUL strong avoid.
 
 ## Core Concepts
 

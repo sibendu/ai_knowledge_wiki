@@ -19,6 +19,28 @@ Append entries in reverse chronological order. Use headings that are easy to sea
 ## [YYYY-MM-DD] maintenance | Change Summary
 ```
 
+## [2026-06-25] maintenance | Trade journal restructure + watchlist setup
+
+Established new structure for chart analysis and trade tracking:
+- Created `wiki/watchlist.md` — living swing-trade monitoring dashboard
+- Created `wiki/trade-journal/analysis/` — pre-trade chart analysis sessions, month subfolders
+- Created `wiki/trade-journal/trades/` — actual trade records, month subfolders
+- Added `chart-analysis` and `watchlist` page types to CLAUDE.md / AGENTS.md
+- Added chart-analysis workflow to both manuals
+- Updated `wiki/index.md` with new Active Monitoring and Recent Analysis sections
+- Ingested first analysis session: `wiki/trade-journal/analysis/2026-06/2026-06-25-swing-review.md`
+
+## [2026-06-25] chart-analysis | Bajaj Holdings, BANKBEES, NIFTYBEES, HUL
+
+Daily swing-trade assessment of 4 NSE instruments (2-week to 3-month horizon).
+
+- **Bajaj Holdings (~10,599):** Stage 4 → early Stage 1. Capitulation flush visible. No setup yet. Watchlist — check back 2026-07-23.
+- **BANKBEES (~601.92):** Event-driven crash, 67% recovered. At resistance. Conditional — pullback to 570–580 (3:1) or breakout >610 (2.3:1). Check back 2026-07-09.
+- **NIFTYBEES (272.60):** Event-driven crash, 46% recovered. At resistance. Conditional — pullback to 265–267 (3:1) or breakout >280 (2:1). Check back 2026-07-09.
+- **HUL (2,174.20):** Structural Stage 4, fails all 8 Trend Template criteria, 21% below 200-day MA. Strong Avoid. Check back 2026-09-25.
+
+Source: `wiki/trade-journal/analysis/2026-06/2026-06-25-swing-review.md` | Watchlist: `wiki/watchlist.md`
+
 ## [2026-06-24] ingest | Technical Analysis For Dummies — Barbara Rockefeller (4th Ed, 2020)
 
 Source folder: `raw/inbox/Technical_Analysis_For_Dummies/`
