@@ -1,3 +1,15 @@
+# Sample Prompt
+
+This project has historical price information for stocks and ETFs inside data_nse_calculated/ folder , one csv file for data of each stock/ETF named as <stock_or_etf_code>.csv 
+Please analyze given list of stock/ETF codes over last 1 to 2  years to identify  swing trading opportunities targeting from couple of weeks to 1 or 2 quarters - List of stocks/ETFs to analyze: NIFTYBEES, BANKBEES, MIDCAPETF, HDFCSML250, ICICIBANK, 
+  KOTAKBANK, LT, BAJAJHLDNG, GILLETTE, GLAXO, IRFC, ITC, UCOBANK, BANDHANBANK, APOLLOHOSP, EXIDEIND. Save the analysis in the file ./analysis1.md
+
+Please reuse the existing script code/swing_analysis.py instead of regenerating analysis code. Run it with .venv\Scripts\python.exe against data_nse_calculated for these stock/ETF codes: <PUT_CODES_HERE>. Save the output to <OUTPUT_FILE>.md. If a requested symbol has a known local filename alias, use the script’s alias handling; otherwise report missing files. Keep the same swing-trading horizon of a couple of weeks to 1-2 quarters and update wiki/index.md and wiki/log.md after generating the analysis.
+
+
+
+# Sample Code
+
 from claude_code_sdk import ClaudeAgent, ClaudeAgentOptions
 
 # Define telemetry variables explicitly
@@ -14,3 +26,4 @@ agent = ClaudeAgent(options=options)
 
 # Triggers underlying process execution and generates OTel events
 response = agent.query("Analyze the file structure of this directory.")
+

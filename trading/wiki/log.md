@@ -2,7 +2,7 @@
 type: log
 status: active
 created: 2026-06-13
-updated: 2026-06-24
+updated: 2026-06-28
 tags: [log]
 sources: []
 confidence: high
@@ -18,6 +18,45 @@ Append entries in reverse chronological order. Use headings that are easy to sea
 ## [YYYY-MM-DD] lint | Scope
 ## [YYYY-MM-DD] maintenance | Change Summary
 ```
+
+## [2026-06-28] ingest | analysis1.md NSE swing scan
+
+- Ingested root report `analysis1.md` into `wiki/trade-journal/analysis/2026-06/2026-06-28-nse-swing-scan-analysis1.md`.
+- Preserved the 16-symbol scan summary, method, ranked verdicts, actionable monitoring levels, avoid/review-later notes, and data-quality flags.
+- Updated `wiki/watchlist.md`: added LT, BANDHANBANK, MIDCAPETF, EXIDEIND, APOLLOHOSP, HDFCSML250, and ICICIBANK; updated BANKBEES; downgraded NIFTYBEES and BAJAJHLDNG based on the 2026-06-25 dataset.
+- Updated `wiki/index.md` to point to the durable wiki analysis page.
+
+## [2026-06-28] query | NSE swing scan reusable script
+
+- Created `code/swing_analysis.py`, a dependency-light reusable scanner for local `data_nse_calculated/*.csv` files.
+- Generated `analysis1.md` for NIFTYBEES, BANKBEES, MIDCAPETF, HDFCSML250, ICICIBANK, KOTAKBANK, LT, BAJAJHLDNG, GILLETTE, GLAXO, IRFC, ITC, UCOBANK, BANDHANBANK, APOLLOHOSP, and EXIDEIND.
+- Analysis uses Stage Analysis, Trend Template, 1/3/6-month momentum, 52-week distance, pivots, ATR-based scenario levels, and volume/delivery context.
+- Data notes: `BANDHANBANK` resolved to local file `BANDHANBNK.csv`; KOTAKBANK had a large unadjusted price discontinuity on 2026-01-14, so the scanner used post-gap bars for metrics.
+
+## [2026-06-28] chart-analysis | Historical Price Data - 6.5 Year Stock Analysis
+
+**Swing Trading Opportunity from Historical Data** — Unknown ticker (data.csv), 2020-01-23 to 2026-04-07 (1540 bars).
+
+**Summary:**
+- **Current**: 831 (as of 2026-04-07)
+- **52w High**: 1009 (+21.5%)
+- **52w Low**: 202 (311% above low)
+- **Stage**: Stage 2/3 transition (risky consolidation)
+- **Trend Template**: 3/8 (not ready)
+- **Verdict**: WATCHLIST / CONDITIONAL
+
+**Key Finding:** Stock shows strong 6-year bull trend but **weak current technicals** (volume decline, stage 3 topping, low delivery %). 
+
+**Swing Setup Options:**
+1. **Bullish Entry**: Break above 877–885 + volume confirmation → target 920–950 (+11-14%)
+2. **Value Entry**: Pullback to 760–775 (support) + recovery break → target 850–890
+3. **Avoid**: Until volume increases or institutional holding (delivery %) recovers to >50%
+
+**Created:** `wiki/trade-journal/analysis/2026-06/2026-06-28-swing-trade-data-analysis.md` — full technical analysis, price structure, scenarios, Trend Template assessment, entry/stop framework, invalidation criteria.
+
+**Watchlist Status**: Added with conditional alerts (break 877, break 750, delivery >50%).
+
+---
 
 ## [2026-06-28] chart-analysis | AXISBANK, NAM-INDIA, SBIN, COLPAL, HINDUNILVR, RELIANCE, HDFCAMC, HDFCBANK
 

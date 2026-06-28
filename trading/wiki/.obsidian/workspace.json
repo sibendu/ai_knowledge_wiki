@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "watchlist.md",
+                "file": "trade-journal/analysis/2026-06/2026-06-28-nse-swing-scan-analysis1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "watchlist"
+              "title": "2026-06-28-nse-swing-scan-analysis1"
             }
           }
         ]
@@ -185,9 +185,12 @@
   },
   "active": "4d2190ba1d8ca36e",
   "lastOpenFiles": [
-    "trade-journal/analysis/2026-06/2026-06-25-swing-review.md",
     "trade-journal/analysis/2026-06/2026-06-28-pivotal-points-swing-opportunities.md",
+    "trade-journal/analysis/2026-06/2026-06-25-swing-review.md",
     "watchlist.md",
+    "trade-journal/analysis/2026-06/2026-06-28-nse-swing-scan-analysis1.md",
+    "trade-journal/analysis/2026-06/2026-06-28-swing-trade-data-analysis.md",
+    "log.md.tmp.43912.1495efe84ba1",
     "index.md.tmp.23328.844311750e6d",
     "log.md.tmp.23328.b99f9e5721d6",
     "watchlist.md.tmp.23328.df34686bfeed",
@@ -202,7 +205,6 @@
     "index.md.tmp.54761.37f2cb141485",
     "source-notes/2026-06-24-technical-analysis-for-dummies.md",
     "source-notes/2026-06-24-technical-analysis-for-dummies.md.tmp.54761.e2be4fed373d",
-    "concepts/stage-analysis.md.tmp.54761.da861801b543",
     "entities/people/barbara-rockefeller.md",
     "concepts/price-bars.md",
     "concepts/point-and-figure.md",
@@ -218,7 +220,6 @@
     "indicators/bollinger-bands.md",
     "indicators/macd.md",
     "concepts/market-manipulation.md",
-    "concepts/tape-reading.md",
-    "concepts/line-of-least-resistance.md"
+    "concepts/tape-reading.md"
   ]
 }
