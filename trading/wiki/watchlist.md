@@ -19,6 +19,10 @@ Living dashboard for instruments under active monitoring. Updated after each cha
 
 | Instrument | Type | Flagged | Stage at Flag | Verdict | Entry Condition | Check-back | Analysis |
 |-----------|------|---------|--------------|---------|----------------|-----------|----------|
+| **AXISBANK** (~1,377) | Stock (NSE) | 2026-06-28 | **Stage 2 confirmed** | **Strong Setup** | Breakout >1420 vol >1.5x OR pullback to 1290–1320 (MA50 zone) | 2026-07-12 | [2026-06-28](trade-journal/analysis/2026-06/2026-06-28-pivotal-points-swing-opportunities.md) |
+| **NAM-INDIA** (~1,139) | Stock (NSE) | 2026-06-28 | **Stage 2 confirmed** | **Strong Setup** | Current entry 1100–1140 OR breakout >1195 with vol >1.5x | 2026-07-12 | [2026-06-28](trade-journal/analysis/2026-06/2026-06-28-pivotal-points-swing-opportunities.md) |
+| SBIN (~1,045) | Stock (NSE) | 2026-06-28 | Stage 2 recovery (post-distribution) | Conditional | Weekly close >1121 (Apr pivot high) on volume | 2026-07-26 | [2026-06-28](trade-journal/analysis/2026-06/2026-06-28-pivotal-points-swing-opportunities.md) |
+| COLPAL (~1,993) | Stock (NSE) | 2026-06-28 | Stage 4 / potential bottom | Watchlist | Weekly close >2090 (MA50/MA150 cluster) signals Stage 3→2 reversal | 2026-07-26 | [2026-06-28](trade-journal/analysis/2026-06/2026-06-28-pivotal-points-swing-opportunities.md) |
 | Bajaj Finance Investments & Holding (~10,599) | Stock (NSE) | 2026-06-25 | Stage 4 → early Stage 1 | Watchlist | Base builds 5–10 weeks; 200-day MA flattens; VCP forms | 2026-07-23 | [2026-06-25](trade-journal/analysis/2026-06/2026-06-25-swing-review.md) |
 | BANKBEES (~601.92) | ETF (NSE) | 2026-06-25 | Stage 4 → recovering | Conditional | Pullback to 570–580 (3:1 R/R) OR close >610 on vol >normal (2.3:1 R/R) | 2026-07-09 | [2026-06-25](trade-journal/analysis/2026-06/2026-06-25-swing-review.md) |
 | NIFTYBEES | Index ETF (NSE) | 2026-06-25 | Stage 4 → early Stage 1 | Conditional | Pullback to 265–267 (3:1 R/R) OR close >280 on vol >6–7M (2:1 R/R) | 2026-07-09 | [2026-06-25](trade-journal/analysis/2026-06/2026-06-25-swing-review.md) |

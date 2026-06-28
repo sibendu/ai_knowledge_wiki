@@ -19,6 +19,28 @@ Append entries in reverse chronological order. Use headings that are easy to sea
 ## [YYYY-MM-DD] maintenance | Change Summary
 ```
 
+## [2026-06-28] chart-analysis | AXISBANK, NAM-INDIA, SBIN, COLPAL, HINDUNILVR, RELIANCE, HDFCAMC, HDFCBANK
+
+**Livermore Pivotal Points & Swing Opportunities** — 8-stock institutional review (1-year horizon).
+
+**Tier 1 (Strong Setup):**
+- **AXISBANK** (8/8 TT): Base 1042 → ATH 1418 (Feb) → correction to 1150 → V-recovery at 1391 (re-pivot signal). Current 1377, 2.9% from ATH. Perfect Stage 2 uptrend structure. Entry: breakout >1420 or pullback 1290–1320. Target 1520–1580. Stop 1220. R:R 2:1–3:1.
+- **NAM-INDIA** (8/8 TT): Textbook four-test base (780–800 zone held 4×). Feb breakout >1000 = pivotal point. ATH 1194. Current 1139 (4.6% from high). Entry: current 1100–1140 or ATH breakout >1195. Target 1280–1380. Stop 1038. R:R 1.5:1–2:1.
+
+**Tier 2 (Conditional):**
+- **SBIN** (7/8 TT): +57% run to ATH 1235 (Feb), then lower high/lower low pattern; in repair mode. Entry trigger: weekly close >1121 (Apr pivot). Target 1180–1235. Stop 975. R:R 1.5:1–2:1.
+- **COLPAL** (0/8 TT): Stage 4 decline from ATH 2504 → climactic low 1782 → +25% bounce → consolidation. Entry trigger: weekly close >2090 (MA cluster) = Stage reversal signal. Speculative, counter-trend.
+
+**Tier 3 (Avoid):**
+- **HINDUNILVR, RELIANCE**: Stage 4, lower highs/lows in progress. No entry; monitor for reversal.
+- **HDFCAMC, HDFCBANK**: ~50–53% structural price breaks (likely corporate events Dec 2025 & Sep 2025). Data distortion; no analysis until 12+ mo post-event history.
+
+**Watchlist updated** with 4 new active stocks + entry conditions + check-back dates.
+
+**Created:** `wiki/trade-journal/analysis/2026-06/2026-06-28-pivotal-points-swing-opportunities.md` — full analysis with pivotal sequences, Livermore interpretation, TT verification, key levels, entry signals, risk notes.
+
+---
+
 ## [2026-06-25] maintenance | Trade journal restructure + watchlist setup
 
 Established new structure for chart analysis and trade tracking:

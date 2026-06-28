@@ -93,6 +93,7 @@ Read this page first when answering questions or ingesting sources. Update it wh
 
 ## Recent Analysis Sessions
 
+- [2026-06-28 Pivotal Points & Swing Opportunities](trade-journal/analysis/2026-06/2026-06-28-pivotal-points-swing-opportunities.md) — AXISBANK, NAM-INDIA, SBIN, COLPAL, HINDUNILVR, RELIANCE, HDFCAMC, HDFCBANK. Livermore pivotal-point analysis + Trend Template. 2 strong setups (8/8 TT), 2 conditional, 4 avoid.
 - [2026-06-25 Swing Review](trade-journal/analysis/2026-06/2026-06-25-swing-review.md) — Bajaj Holdings, BANKBEES, NIFTYBEES, HUL. All Stage 4 or transitioning. ETFs conditional (wait for pullback/breakout); HUL strong avoid.
 
 ## Core Concepts
