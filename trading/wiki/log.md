@@ -24,6 +24,7 @@ Append entries in reverse chronological order. Use headings that are easy to sea
 - Changed actual trade records from one file per trade to annual ledger files named `wiki/trade-journal/trades/all-trades-YYYY.md`.
 - Created `wiki/trade-journal/trades/all-trades-2026.md` with the LT open position row and moved the LT narrative to `wiki/trade-journal/trades/2026-07/lt.md`.
 - Updated watchlist, trade-journal README, index, and operating manuals to use annual ledgers plus monthly stock narrative pages.
+- Updated the ledger schema to remove Remarks and add target, stop_loss, and R:R after total_cost; these may be supplied with the trade or derived from the corresponding analysis record.
 - Made `wiki/trade-journal/analysis/2026-06/2026-06-28-nse-swing-scan-analysis1.md` self-contained by embedding the full generated scan details.
 - Confirmed the pivotal-points wiki analysis page is already self-contained; refreshed metadata so it no longer relies on a root analysis file.
 
@@ -32,7 +33,7 @@ Append entries in reverse chronological order. Use headings that are easy to sea
 - Recorded actual LT long entry under `wiki/trade-journal/trades/2026-07/lt.md`.
 - Entry: 12 shares bought at 4097.8 on 2026-07-01; gross entry value 49,173.60 before charges.
 - Linked the trade to the 2026-06-28 NSE swing scan and marked the LT watchlist row as Triggered.
-- Open risk fields remain missing: stop, target, invalidation condition, and planned risk.
+- Target, stop loss, and R:R were populated from the 2026-06-28 NSE scan pullback scenario; R:R was recalculated from the actual buy price.
 
 ## [2026-06-28] ingest | NSE swing scan
 

@@ -17,6 +17,10 @@ strategy:
 
 ## Planned Thesis
 
+## Analysis-Derived Plan
+
+Use this section when target, stop loss, or R:R were not supplied with the trade entry. Record the analysis page and scenario used, and recalculate R:R from the actual buy price when it differs from the analysis entry.
+
 ## Actual Execution
 
 ## Outcome

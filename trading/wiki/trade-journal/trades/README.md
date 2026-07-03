@@ -16,6 +16,8 @@ Actual trade records: compact annual ledgers plus linked monthly narrative pages
 **Annual ledger naming:** `all-trades-YYYY.md` (for example, `all-trades-2026.md`).
 **Narrative naming:** `YYYY-MM/<stock-code>.md` (for example, `2026-07/lt.md`).
 **Template:** Use `wiki/_templates/trade-review.md` for narrative pages.
+**Ledger columns:** position, stock_code, direction, quantity, buy_date, buy_price, total_cost, target, stop_loss, R:R, sell_date, sell_price, total_sell_value, profit (loss).
+**Target/stop/R:R rule:** Use values supplied with the trade entry when provided. If omitted, populate them from the corresponding analysis record and document the source scenario in the narrative page.
 
 ## Open Trades
 

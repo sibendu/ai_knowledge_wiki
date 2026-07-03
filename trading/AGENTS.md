@@ -196,10 +196,11 @@ Log heading format for chart analysis:
 When the user records an actual trade:
 
 1. Update the annual ledger: `wiki/trade-journal/trades/all-trades-YYYY.md`.
-2. The annual ledger should only contain this table: position (OPEN/CLOSED), stock_code, direction, quantity, buy_date, buy_price, total_cost, sell_date, sell_price, total_sell_value, profit (loss), Remarks.
-3. Link the `stock_code` cell to the monthly narrative page: `wiki/trade-journal/trades/YYYY-MM/<stock-code>.md`.
-4. Use the monthly narrative page for planned thesis, actual execution, rule adherence, outcome, and lessons.
-5. Update `wiki/watchlist.md`, `wiki/index.md`, and `wiki/log.md`.
+2. The annual ledger should only contain this table: position (OPEN/CLOSED), stock_code, direction, quantity, buy_date, buy_price, total_cost, target, stop_loss, R:R, sell_date, sell_price, total_sell_value, profit (loss). Do not add a Remarks column.
+3. Target, stop_loss, and R:R may be supplied by the user when recording the trade. If omitted, populate them from the corresponding analysis record; if the actual entry differs from the analysis entry, recalculate R:R from the actual buy price and the analysis-derived target/stop.
+4. Link the `stock_code` cell to the monthly narrative page: `wiki/trade-journal/trades/YYYY-MM/<stock-code>.md`.
+5. Use the monthly narrative page for planned thesis, actual execution, source scenario for target/stop/R:R, rule adherence, outcome, and lessons.
+6. Update `wiki/watchlist.md`, `wiki/index.md`, and `wiki/log.md`.
 
 ## Page Quality Bar
 

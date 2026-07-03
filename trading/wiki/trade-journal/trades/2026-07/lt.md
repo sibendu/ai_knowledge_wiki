@@ -39,6 +39,16 @@ The entry follows the 2026-06-28 NSE swing scan, which classified LT as a **Stro
 
 The 4097.8 entry sits inside the preferred pullback zone from that scan.
 
+## Analysis-Derived Plan
+
+The trade entry did not specify target, stop loss, or R:R separately. Because the buy price sits in the pullback zone from the 2026-06-28 scan, the ledger uses the scan's LT pullback scenario:
+
+| Source scenario | Analysis entry | Actual entry | Target | Stop loss | R:R used in ledger |
+|---|---:|---:|---:|---:|---:|
+| Pullback attempt | 4119.57 | 4097.8 | 4440.00 | 3998.53 | 3.4:1 |
+
+The scan-listed pullback R:R was 2.6:1 using an analysis entry of 4119.57. The ledger R:R is recalculated from the actual buy price: `(4440.00 - 4097.8) / (4097.8 - 3998.53)`, approximately 3.4:1.
+
 ## Actual Execution
 
 | Field | Value |
@@ -47,10 +57,11 @@ The 4097.8 entry sits inside the preferred pullback zone from that scan.
 | Quantity | 12 |
 | Entry price | 4097.8 |
 | Gross entry value | 49,173.60 |
-| Stop | Not recorded |
-| Initial target | Not recorded |
-| Risk per share | Not recorded |
-| Total planned risk | Not recorded |
+| Target | 4440.00 |
+| Stop loss | 3998.53 |
+| R:R | 3.4:1 |
+| Risk per share | 99.27 |
+| Total planned risk | 1,191.24 |
 
 ## Outcome
 
@@ -63,17 +74,17 @@ Open. Exit, P&L, and post-trade review are not yet recorded in [all-trades-2026]
 
 ## What Failed
 
-- Stop, target, and planned risk were not provided with the entry record.
+- Target, stop loss, and R:R were not provided with the entry record; they were derived from the corresponding 2026-06-28 analysis scenario.
 
 ## Rule Adherence
 
 - **Setup alignment:** High, based on the 2026-06-28 scan.
-- **Risk definition:** Needs review until stop and position risk are recorded.
-- **Execution completeness:** Partial; entry is recorded, but exit plan is missing.
+- **Risk definition:** Medium; target and stop loss are analysis-derived, not explicitly supplied at order entry.
+- **Execution completeness:** Partial; entry is recorded, but actual exit remains open.
 
 ## Lessons
 
-- Future entry records should include stop, target, invalidation condition, and whether the trade is full size or pilot size.
+- Future entry records should include target, stop loss, R:R, invalidation condition, and whether the trade is full size or pilot size. If target/stop/R:R are omitted, derive them from the matching analysis scenario and record that derivation here.
 
 ## Updates To Strategy / Setup Pages
 
