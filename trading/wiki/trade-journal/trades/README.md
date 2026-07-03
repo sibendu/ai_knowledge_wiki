@@ -1,22 +1,30 @@
 ---
 type: index
-status: seed
+status: active
 created: 2026-06-25
-updated: 2026-06-25
+updated: 2026-07-03
 tags: [trade-journal, trades]
 sources: []
-confidence: low
+confidence: medium
 ---
 
 # Trade Records
 
-Actual trade records: entry, exit, P&L, and post-trade lessons.
+Actual trade records: compact annual ledgers plus linked monthly narrative pages.
 
-**Organization:** One page per trade, filed under monthly subfolders (`YYYY-MM/`).
-**Naming:** `YYYY-MM-DD-ticker-direction.md` (e.g., `2026-07-15-niftybees-long.md`)
-**Template:** Copy from `wiki/_templates/trade-review.md`
+**Organization:** One annual ledger table per year, with stock-code links to narrative pages under monthly subfolders.
+**Annual ledger naming:** `all-trades-YYYY.md` (for example, `all-trades-2026.md`).
+**Narrative naming:** `YYYY-MM/<stock-code>.md` (for example, `2026-07/lt.md`).
+**Template:** Use `wiki/_templates/trade-review.md` for narrative pages.
 
-No trade records yet. Pages will be added here as trades are executed.
+## Open Trades
+
+- [All Trades 2026](all-trades-2026.md) - Annual trade ledger.
+- [LT narrative](2026-07/lt.md) - Bought 12 shares at 4097.8; open as of 2026-07-03.
+
+## Closed Trades
+
+- None recorded yet.
 
 ## Related
 

@@ -2,7 +2,7 @@
 type: watchlist
 status: active
 created: 2026-06-25
-updated: 2026-06-28
+updated: 2026-07-03
 tags: [watchlist, swing-trading, monitoring]
 confidence: medium
 ---
@@ -19,7 +19,7 @@ Living dashboard for instruments under active monitoring. Updated after each cha
 
 | Instrument | Type | Flagged | Stage at Flag | Verdict | Entry Condition | Check-back | Analysis |
 |-----------|------|---------|--------------|---------|----------------|-----------|----------|
-| **LT** (~4,216) | Stock (NSE) | 2026-06-28 | **Stage 2 markup** | **Strong Setup** | Pullback near 4119-4029 OR breakout >4440 with volume confirmation | 2026-07-12 | [2026-06-28 scan](trade-journal/analysis/2026-06/2026-06-28-nse-swing-scan-analysis1.md) |
+| **LT** (entry 4097.8) | Stock (NSE) | 2026-06-28 | **Stage 2 markup** | **Triggered** | Bought 12 shares on 2026-07-01; monitor against recorded trade plan gaps | 2026-07-12 | [Trade](trade-journal/trades/2026-07/lt.md), [2026 ledger](trade-journal/trades/all-trades-2026.md), [2026-06-28 scan](trade-journal/analysis/2026-06/2026-06-28-nse-swing-scan-analysis1.md) |
 | **BANDHANBANK** (~202) | Stock (NSE) | 2026-06-28 | **Stage 2 markup** | **Strong Setup** | Hold support near 197.66 OR breakout >212.48 with volume confirmation | 2026-07-12 | [2026-06-28 scan](trade-journal/analysis/2026-06/2026-06-28-nse-swing-scan-analysis1.md) |
 | **MIDCAPETF** (~23.26) | ETF (NSE) | 2026-06-28 | **Stage 2 markup** | **Strong Setup** | Hold support near 22.83 OR breakout >23.34 with volume confirmation | 2026-07-12 | [2026-06-28 scan](trade-journal/analysis/2026-06/2026-06-28-nse-swing-scan-analysis1.md) |
 | EXIDEIND (~390) | Stock (NSE) | 2026-06-28 | Stage 1 base / transition | Setup | Pullback near 376.78-366.16 OR breakout >409.80 with confirmation | 2026-07-12 | [2026-06-28 scan](trade-journal/analysis/2026-06/2026-06-28-nse-swing-scan-analysis1.md) |
@@ -66,5 +66,5 @@ Living dashboard for instruments under active monitoring. Updated after each cha
 
 - After chart analysis session: add new rows to Active; update any existing rows whose stage or verdict changed.
 - When check-back fires: re-run chart analysis, update stage/verdict/check-back, or close the row.
-- When entry triggered: change status to Triggered; create a trade record under `wiki/trade-journal/trades/YYYY-MM/`.
+- When entry triggered: change status to Triggered; add/update the row in `wiki/trade-journal/trades/all-trades-YYYY.md` and link the stock code to the monthly narrative page under `wiki/trade-journal/trades/YYYY-MM/<stock-code>.md`.
 - When position closes: move row to Closed with outcome.

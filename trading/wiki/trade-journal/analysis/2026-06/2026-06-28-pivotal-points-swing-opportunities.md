@@ -2,10 +2,10 @@
 type: chart-analysis
 status: active
 created: 2026-06-28
-updated: 2026-06-28
+updated: 2026-07-03
 tags: [pivotal-points, livermore, swing-trading, trend-template, bfsi, fmcg]
 confidence: medium
-sources: ["data_nse_calculated"]
+sources: ["../../../../data_nse_calculated"]
 ---
 
 # Pivotal Point Analysis & Swing Opportunities — 8-Stock Review
@@ -14,6 +14,7 @@ sources: ["data_nse_calculated"]
 **Method:** Jesse Livermore pivotal points (10-day swing highs/lows) + Trend Template verification  
 **Universe:** RELIANCE, SBIN, AXISBANK, HINDUNILVR, HDFCBANK, HDFCAMC, NAM-INDIA, COLPAL  
 **Horizon:** 1 year (2025-06-28 to 2026-06-28)  
+**Source detail:** This page is the durable wiki copy of the analysis; it does not depend on a root-level analysis file.
 
 ---
 

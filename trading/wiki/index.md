@@ -2,7 +2,7 @@
 type: index
 status: active
 created: 2026-06-13
-updated: 2026-06-28
+updated: 2026-07-03
 tags: [index]
 sources: []
 confidence: high
@@ -85,6 +85,8 @@ Read this page first when answering questions or ingesting sources. Update it wh
 - [Trade Journal](trade-journal/README.md) - Analysis sessions and trade records; month-organized subfolders.
   - [Analysis](trade-journal/analysis/) - Pre-trade chart analysis sessions (one page per day).
   - [Trades](trade-journal/trades/) - Actual trade records and post-trade reviews.
+- [All Trades 2026](trade-journal/trades/all-trades-2026.md) - Annual actual-trade ledger.
+- [LT Trade Narrative](trade-journal/trades/2026-07/lt.md) - Narrative record for the open LT trade: bought 12 shares at 4097.8 on 2026-07-01.
 - [Livermore Trading Principles](syntheses/livermore-trading-principles.md) - Durable synthesis of principles from `How to Trade in Stocks`.
 
 ## Active Monitoring

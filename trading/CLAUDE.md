@@ -76,7 +76,7 @@ wiki/                Generated knowledge layer (edit freely).
   watchlist.md       Living swing-trade monitoring dashboard. Read when asked "which stocks to check today/this week?"
   trade-journal/     LLM-written analysis sessions and trade records.
     analysis/        Pre-trade chart analysis sessions. One page per day. Month subfolders: YYYY-MM/.
-    trades/          Actual trade records and post-trade reviews. Month subfolders: YYYY-MM/.
+    trades/          Actual trade records: annual ledgers `all-trades-YYYY.md` plus monthly narrative pages `YYYY-MM/<stock-code>.md`.
   _templates/        Page templates to copy when creating new pages.
 ```
 
@@ -172,6 +172,16 @@ Log heading format for chart analysis:
 ```markdown
 ## [YYYY-MM-DD] chart-analysis | Tickers Reviewed
 ```
+
+## Trade recording workflow
+
+When the user records an actual trade:
+
+1. Update the annual ledger: `wiki/trade-journal/trades/all-trades-YYYY.md`.
+2. The annual ledger should only contain this table: position (OPEN/CLOSED), stock_code, direction, quantity, buy_date, buy_price, total_cost, sell_date, sell_price, total_sell_value, profit (loss), Remarks.
+3. Link the `stock_code` cell to the monthly narrative page: `wiki/trade-journal/trades/YYYY-MM/<stock-code>.md`.
+4. Use the monthly narrative page for planned thesis, actual execution, rule adherence, outcome, and lessons.
+5. Update `wiki/watchlist.md`, `wiki/index.md`, and `wiki/log.md`.
 
 ## Page quality bar
 

@@ -2,7 +2,7 @@
 type: log
 status: active
 created: 2026-06-13
-updated: 2026-06-28
+updated: 2026-07-03
 tags: [log]
 sources: []
 confidence: high
@@ -19,9 +19,24 @@ Append entries in reverse chronological order. Use headings that are easy to sea
 ## [YYYY-MM-DD] maintenance | Change Summary
 ```
 
-## [2026-06-28] ingest | analysis1.md NSE swing scan
+## [2026-07-03] maintenance | Trade ledger structure and self-contained analysis pages
 
-- Ingested root report `analysis1.md` into `wiki/trade-journal/analysis/2026-06/2026-06-28-nse-swing-scan-analysis1.md`.
+- Changed actual trade records from one file per trade to annual ledger files named `wiki/trade-journal/trades/all-trades-YYYY.md`.
+- Created `wiki/trade-journal/trades/all-trades-2026.md` with the LT open position row and moved the LT narrative to `wiki/trade-journal/trades/2026-07/lt.md`.
+- Updated watchlist, trade-journal README, index, and operating manuals to use annual ledgers plus monthly stock narrative pages.
+- Made `wiki/trade-journal/analysis/2026-06/2026-06-28-nse-swing-scan-analysis1.md` self-contained by embedding the full generated scan details.
+- Confirmed the pivotal-points wiki analysis page is already self-contained; refreshed metadata so it no longer relies on a root analysis file.
+
+## [2026-07-03] trade-review | LT long entry
+
+- Recorded actual LT long entry under `wiki/trade-journal/trades/2026-07/lt.md`.
+- Entry: 12 shares bought at 4097.8 on 2026-07-01; gross entry value 49,173.60 before charges.
+- Linked the trade to the 2026-06-28 NSE swing scan and marked the LT watchlist row as Triggered.
+- Open risk fields remain missing: stop, target, invalidation condition, and planned risk.
+
+## [2026-06-28] ingest | NSE swing scan
+
+- Ingested the generated NSE swing scan into `wiki/trade-journal/analysis/2026-06/2026-06-28-nse-swing-scan-analysis1.md`.
 - Preserved the 16-symbol scan summary, method, ranked verdicts, actionable monitoring levels, avoid/review-later notes, and data-quality flags.
 - Updated `wiki/watchlist.md`: added LT, BANDHANBANK, MIDCAPETF, EXIDEIND, APOLLOHOSP, HDFCSML250, and ICICIBANK; updated BANKBEES; downgraded NIFTYBEES and BAJAJHLDNG based on the 2026-06-25 dataset.
 - Updated `wiki/index.md` to point to the durable wiki analysis page.
@@ -29,7 +44,7 @@ Append entries in reverse chronological order. Use headings that are easy to sea
 ## [2026-06-28] query | NSE swing scan reusable script
 
 - Created `code/swing_analysis.py`, a dependency-light reusable scanner for local `data_nse_calculated/*.csv` files.
-- Generated `analysis1.md` for NIFTYBEES, BANKBEES, MIDCAPETF, HDFCSML250, ICICIBANK, KOTAKBANK, LT, BAJAJHLDNG, GILLETTE, GLAXO, IRFC, ITC, UCOBANK, BANDHANBANK, APOLLOHOSP, and EXIDEIND.
+- Generated the reusable NSE scan for NIFTYBEES, BANKBEES, MIDCAPETF, HDFCSML250, ICICIBANK, KOTAKBANK, LT, BAJAJHLDNG, GILLETTE, GLAXO, IRFC, ITC, UCOBANK, BANDHANBANK, APOLLOHOSP, and EXIDEIND.
 - Analysis uses Stage Analysis, Trend Template, 1/3/6-month momentum, 52-week distance, pivots, ATR-based scenario levels, and volume/delivery context.
 - Data notes: `BANDHANBANK` resolved to local file `BANDHANBNK.csv`; KOTAKBANK had a large unadjusted price discontinuity on 2026-01-14, so the scanner used post-gap bars for metrics.
 
