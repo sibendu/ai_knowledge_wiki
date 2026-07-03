@@ -39,15 +39,17 @@ The entry follows the 2026-06-28 NSE swing scan, which classified LT as a **Stro
 
 The 4097.8 entry sits inside the preferred pullback zone from that scan.
 
-## Analysis-Derived Plan
+## Trade Plan
 
-The trade entry did not specify target, stop loss, or R:R separately. Because the buy price sits in the pullback zone from the 2026-06-28 scan, the ledger uses the scan's LT pullback scenario:
+The target, stop loss, and R:R were supplied with the trade record on 2026-07-03:
 
-| Source scenario | Analysis entry | Actual entry | Target | Stop loss | R:R used in ledger |
-|---|---:|---:|---:|---:|---:|
-| Pullback attempt | 4119.57 | 4097.8 | 4440.00 | 3998.53 | 3.4:1 |
+| Field | Value |
+|---|---:|
+| Target | 4440 |
+| Stop loss | 3998 |
+| R:R | 2.6:1 |
 
-The scan-listed pullback R:R was 2.6:1 using an analysis entry of 4119.57. The ledger R:R is recalculated from the actual buy price: `(4440.00 - 4097.8) / (4097.8 - 3998.53)`, approximately 3.4:1.
+These values align with the 2026-06-28 scan's LT pullback scenario: analysis entry 4119.57, target 4440.00, stop 3998.53, R:R 2.6:1.
 
 ## Actual Execution
 
@@ -57,11 +59,11 @@ The scan-listed pullback R:R was 2.6:1 using an analysis entry of 4119.57. The l
 | Quantity | 12 |
 | Entry price | 4097.8 |
 | Gross entry value | 49,173.60 |
-| Target | 4440.00 |
-| Stop loss | 3998.53 |
-| R:R | 3.4:1 |
-| Risk per share | 99.27 |
-| Total planned risk | 1,191.24 |
+| Target | 4440 |
+| Stop loss | 3998 |
+| R:R | 2.6:1 |
+| Risk per share | 99.80 |
+| Total planned risk | 1,197.60 |
 
 ## Outcome
 
@@ -74,12 +76,12 @@ Open. Exit, P&L, and post-trade review are not yet recorded in [all-trades-2026]
 
 ## What Failed
 
-- Target, stop loss, and R:R were not provided with the entry record; they were derived from the corresponding 2026-06-28 analysis scenario.
+- The entry was documented after execution rather than as a pre-entry order plan.
 
 ## Rule Adherence
 
 - **Setup alignment:** High, based on the 2026-06-28 scan.
-- **Risk definition:** Medium; target and stop loss are analysis-derived, not explicitly supplied at order entry.
+- **Risk definition:** Medium; target and stop loss are recorded and align with the prior analysis, but were documented after execution.
 - **Execution completeness:** Partial; entry is recorded, but actual exit remains open.
 
 ## Lessons

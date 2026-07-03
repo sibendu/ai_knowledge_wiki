@@ -23,6 +23,9 @@ Actual trade records: compact annual ledgers plus linked monthly narrative pages
 
 - [All Trades 2026](all-trades-2026.md) - Annual trade ledger.
 - [LT narrative](2026-07/lt.md) - Bought 12 shares at 4097.8; open as of 2026-07-03.
+- [NAM-INDIA narrative](2026-06/nam-india.md) - Bought 40 shares at 1144.30; open as of 2026-07-03.
+- [BANDHANBNK narrative](2026-06/bandhanbnk.md) - Bought 250 shares at 202.24; open as of 2026-07-03.
+- [MIDCAPETF narrative](2026-07/midcapetf.md) - Bought 2000 units at 23.32; open as of 2026-07-03.
 
 ## Closed Trades
 

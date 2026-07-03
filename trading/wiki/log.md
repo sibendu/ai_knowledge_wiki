@@ -19,6 +19,13 @@ Append entries in reverse chronological order. Use headings that are easy to sea
 ## [YYYY-MM-DD] maintenance | Change Summary
 ```
 
+## [2026-07-03] trade-review | LT, NAM-INDIA, BANDHANBNK, MIDCAPETF entries
+
+- Updated `wiki/trade-journal/trades/all-trades-2026.md` with four open long positions: LT, NAM-INDIA, BANDHANBNK, and MIDCAPETF.
+- Updated the LT narrative with user-supplied target 4440, stop 3998, and R:R 2.6:1.
+- Created trade narrative pages for NAM-INDIA, BANDHANBNK, and MIDCAPETF.
+- Marked NAM-INDIA, BANDHANBNK, and MIDCAPETF watchlist rows as Triggered and linked each to the annual ledger and narrative page.
+
 ## [2026-07-03] maintenance | Trade ledger structure and self-contained analysis pages
 
 - Changed actual trade records from one file per trade to annual ledger files named `wiki/trade-journal/trades/all-trades-YYYY.md`.
