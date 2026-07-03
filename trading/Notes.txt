@@ -1,10 +1,50 @@
-# Sample Prompt
+# Sample Prompt for  Chart analysis workflow
 
-This project has historical price information for stocks and ETFs inside data_nse_calculated/ folder , one csv file for data of each stock/ETF named as <stock_or_etf_code>.csv 
-Please analyze given list of stock/ETF codes over last 1 to 2  years to identify  swing trading opportunities targeting from couple of weeks to 1 or 2 quarters - List of stocks/ETFs to analyze: NIFTYBEES, BANKBEES, MIDCAPETF, HDFCSML250, ICICIBANK, 
-  KOTAKBANK, LT, BAJAJHLDNG, GILLETTE, GLAXO, IRFC, ITC, UCOBANK, BANDHANBANK, APOLLOHOSP, EXIDEIND. Save the analysis in the file ./analysis1.md
+Analyze the image for identifying potential swing trade opportunities; it is latest chart for a stock/ETF. 
+
+
+# Sample Prompt for Data Analysis Workflow
+
+##
+
+This project has historical stock price information inside data_nse_calculated/ folder , one csv file for each stock named as <stock_code>.csv . 
+
+Please analyze given list of stock codes to identify short term swing trading opportunities (targeting from couple of  weeks to a quarter) applying concepts, strategies, indicators, patterns methods available in this wiki from experts like Jesse Livermore (e.g. pivotal points) and/or Mark Minervini (e.g. VCP, SEPA etc). 
+Use data for the stocks over last 1  year. 
+List of stocks:  NIFTYBEES, BANKBEES, ICICIB22, CPSEETF, HDFCGOLD, SBISENSEX.BO, SETFGOLD, SBISILVER, NIFTYIETF, NEXT50IETF, MIDCAPETF, HDFCSML250, MOSMALL250, HDFCMOMENT, MOMENTUM, JUNIORBEES, ALPHA, MOALPHA50, MON100, MAFANG, MASPTOP50, MONQ50, MAHKTECH
+
+
+
+## 
+
+This project has historical stock price information inside data_nse_calculated/ folder , one csv file for each stock named as <stock_code>.csv . Please analyze given list of stock codes to identify pivotal points (as conceptalized by Jesse Livermore) over last 1  year. Also identify any short term swing trading opportuntites (targetting from couple of  weeks to a quarter)
+List of stocks to analyze:  RELIANCE, SBIN, AXISBANK, HINDUNILVR, HDFCBANK, HDFCAMC, NAM-INDIA, COLPAL. Save the analysis in the file ./analysis.md
+
+
+##
+
+Run the analysis workflow and save the trade opportunities analysis under trade-analysis as per convention 
+This project has historical price information for ETFs inside data_nse_calculated/ folder , one csv file for data of each stock/ETF named as <stock_or_etf_code>.csv 
+Please analyze given list of ETF codes over last 1 to 2  years to identify  swing trading opportunities targeting from couple of weeks to 1 or 2 quarters - List of stocks/ETFs to analyze: 
+NIFTYBEES, BANKBEES, ICICIB22, CPSEETF, HDFCGOLD, SBISENSEX.BO, SETFGOLD, SBISILVER, NIFTYIETF, NEXT50IETF, MIDCAPETF, HDFCSML250, MOSMALL250, HDFCMOMENT, MOMENTUM, JUNIORBEES, ALPHA, MOALPHA50, MON100, MAFANG, MASPTOP50, MONQ50, MAHKTECH
+
+
+Use ./code/swing_analysis.py for various metrics calculations (like MA50, MA150) that are typically needed; please check before generating code in case that is not sufficient. 
 
 Please reuse the existing script code/swing_analysis.py instead of regenerating analysis code. Run it with .venv\Scripts\python.exe against data_nse_calculated for these stock/ETF codes: <PUT_CODES_HERE>. Save the output to <OUTPUT_FILE>.md. If a requested symbol has a known local filename alias, use the script’s alias handling; otherwise report missing files. Keep the same swing-trading horizon of a couple of weeks to 1-2 quarters and update wiki/index.md and wiki/log.md after generating the analysis.
+
+
+NIFTYBEES, BANKBEES, ICICIB22, CPSEETF, HDFCGOLD, SBISENSEX.BO, SETFGOLD, SBISILVER, NIFTYIETF, NEXT50IETF, MIDCAPETF, HDFCSML250, MOSMALL250, HDFCMOMENT, MOMENTUM, JUNIORBEES, ALPHA, MOALPHA50, MON100, MAFANG, MASPTOP50, MONQ50, MAHKTECH
+
+RELIANCE, LT, SBIN, HDFCBANK, ICICIBANK, AXISBANK, KOTAKBANK, 
+HCLTECH, INFY, TCS, 
+HDFCAMC, NAM-INDIA, BAJAJFINSV, BAJAJHLDNG, BAJFINANCE
+HDFCLIFE, ICICIPRULI, ICICIGI
+HINDUNILVR, NESTLEIND, PGHH, COLPAL, DABUR, GILLETTE, MARICO, ITC, 
+TITAN, PAGEIND, PIDILITIND, BATAINDIA, HAVELLS, VOLTAS
+GLAXO, ABBOTINDIA, PFIZER, SANOFI, 
+ASIANPAINT, BERGEPAINT, 
+MARUTI, BAJAJ-AUTO, 
 
 
 

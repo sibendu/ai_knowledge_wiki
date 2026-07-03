@@ -19,6 +19,32 @@ Append entries in reverse chronological order. Use headings that are easy to sea
 ## [YYYY-MM-DD] maintenance | Change Summary
 ```
 
+## [2026-07-03] chart-analysis | ETF Deep Analysis — VCP/Pivotal Points — MONQ50, MIDCAPETF, JUNIORBEES, NEXT50IETF, HDFCSML250, MOSMALL250, MOALPHA50, ALPHA, BANKBEES, MON100, MAFANG, MASPTOP50 and 10 avoids
+
+- Deep-read analysis using VCP contraction measurement, Livermore pivotal-point methodology, and SEPA/Trend Template on 22 NSE ETFs.
+- MONQ50: 3-contraction VCP confirmed (20→12→7.3% range); 8/8 TT; new 52w high 147.24 on Jul 02. Best swing candidate.
+- MOALPHA50: tight handle below 55.97 pivot after Jun 22 volume spike (120K vs avg 5K); 2.8:1 R:R on MA50 pullback.
+- JUNIORBEES + NEXT50IETF: new 52w highs made today (Jul 03) but reversal bars; wait for pullback to 765/74.52.
+- MOSMALL250: 2.8:1 R:R on pullback to 17.62–17.16 MA50 zone after Jun 15 near-pivot test.
+- Gold/silver (SETFGOLD, HDFCGOLD, SBISILVER): all Stage 3 topping from Jan 2026 highs; no long setups.
+- Broad Nifty (NIFTYBEES, NIFTYIETF): Stage 4 decline; MA200 slope negative; avoid.
+- MAHKTECH: 0/8 TT; Stage 4; -38.9% from 52w high.
+- Created analysis page: `wiki/trade-journal/analysis/2026-07/2026-07-03-etf-swing-deep-analysis-23-symbols.md`.
+- Updated `wiki/index.md`.
+
+## [2026-07-03] chart-analysis | MONQ50, MIDCAPETF, HDFCSML250, MOSMALL250, MOALPHA50, BANKBEES, JUNIORBEES, NEXT50IETF, ALPHA, ICICIB22, MON100, MASPTOP50, MAFANG, SETFGOLD, HDFCGOLD, SBISILVER, HDFCMOMENT, CPSEETF, MOMENTUM, NIFTYBEES, NIFTYIETF, MAHKTECH
+
+- Ran `code/swing_analysis.py` on 22 NSE ETF symbols (SBISENSEX.BO not in data); lookback 504 rows (~2 years).
+- **Strong Setups:** MONQ50 (8/8 TT, Stage 2, +40.7% 3m), MIDCAPETF (7/8 TT, Stage 2 — existing position).
+- **Setups (7 symbols):** HDFCSML250, MOSMALL250, MOALPHA50, BANKBEES, JUNIORBEES, NEXT50IETF, ALPHA.
+- **Conditional:** ICICIB22 (5/8 TT, below MA50/MA150 — entry only on reclaim with volume).
+- **Watchlist:** MON100, MASPTOP50, MAFANG (US-linked, 1m pullback), SETFGOLD, HDFCGOLD, SBISILVER (gold/silver Stage 3), HDFCMOMENT, CPSEETF, MOMENTUM.
+- **Avoid:** NIFTYBEES, NIFTYIETF (Stage 4), MAHKTECH (0/8 TT, Stage 4).
+- Key theme: small/mid-cap ETFs lead; broad Nifty in structural decline; gold/silver correcting from Jan 2026 highs.
+- Created analysis page: `wiki/trade-journal/analysis/2026-07/2026-07-03-etf-swing-scan-23-symbols.md`.
+- Updated `wiki/watchlist.md` with 14 new rows and 3 updated existing rows.
+- Updated `wiki/index.md` with link to analysis page.
+
 ## [2026-07-03] trade-review | LT, NAM-INDIA, BANDHANBNK, MIDCAPETF entries
 
 - Updated `wiki/trade-journal/trades/all-trades-2026.md` with four open long positions: LT, NAM-INDIA, BANDHANBNK, and MIDCAPETF.

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "trade-journal/analysis/2026-06/2026-06-28-nse-swing-scan-analysis1.md",
+                "file": "concepts/ichimoku.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-06-28-nse-swing-scan-analysis1"
+              "title": "ichimoku"
             }
           }
         ]
@@ -183,12 +183,18 @@
       "bases:Create new base": false
     }
   },
-  "active": "4d2190ba1d8ca36e",
+  "active": "c67e06c0e17618ec",
   "lastOpenFiles": [
+    "log.md.tmp.5812.9fe5736610fe",
+    "index.md.tmp.5812.b921fdca2fb7",
+    "trade-journal/analysis/2026-07/2026-07-03-etf-swing-deep-analysis-23-symbols.md",
+    "source-notes/2026-06-24-technical-analysis-for-dummies.md",
+    "entities/people/barbara-rockefeller.md",
+    "entities/people/mark-minervini.md",
+    "trade-journal/analysis/2026-06/2026-06-28-nse-swing-scan-analysis1.md",
     "trade-journal/analysis/2026-06/2026-06-28-pivotal-points-swing-opportunities.md",
     "trade-journal/analysis/2026-06/2026-06-25-swing-review.md",
     "watchlist.md",
-    "trade-journal/analysis/2026-06/2026-06-28-nse-swing-scan-analysis1.md",
     "trade-journal/analysis/2026-06/2026-06-28-swing-trade-data-analysis.md",
     "log.md.tmp.43912.1495efe84ba1",
     "index.md.tmp.23328.844311750e6d",
@@ -203,9 +209,6 @@
     "index.md.tmp.54761.12fc94d8c8d5",
     "index.md.tmp.54761.a6003c7aace7",
     "index.md.tmp.54761.37f2cb141485",
-    "source-notes/2026-06-24-technical-analysis-for-dummies.md",
-    "source-notes/2026-06-24-technical-analysis-for-dummies.md.tmp.54761.e2be4fed373d",
-    "entities/people/barbara-rockefeller.md",
     "concepts/price-bars.md",
     "concepts/point-and-figure.md",
     "concepts/ichimoku.md",
@@ -217,9 +220,6 @@
     "indicators/average-true-range.md",
     "indicators/stochastic-oscillator.md",
     "indicators/moving-averages.md",
-    "indicators/bollinger-bands.md",
-    "indicators/macd.md",
-    "concepts/market-manipulation.md",
-    "concepts/tape-reading.md"
+    "indicators/bollinger-bands.md"
   ]
 }
