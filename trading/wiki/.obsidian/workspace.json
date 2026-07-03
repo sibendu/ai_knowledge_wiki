@@ -185,6 +185,11 @@
   },
   "active": "c67e06c0e17618ec",
   "lastOpenFiles": [
+    "log.md.tmp.5812.660d1e3c9a77",
+    "watchlist.md.tmp.5812.b86d541e6463",
+    "index.md.tmp.5812.fd44621b4c61",
+    "trade-journal/analysis/2026-07/2026-07-03-stock-swing-deep-analysis-14-symbols.md",
+    "trade-journal/analysis/2026-07/2026-07-03-stock-swing-deep-analysis-14-symbols.md.tmp.5812.2866540a83e6",
     "log.md.tmp.5812.9fe5736610fe",
     "index.md.tmp.5812.b921fdca2fb7",
     "trade-journal/analysis/2026-07/2026-07-03-etf-swing-deep-analysis-23-symbols.md",
@@ -205,10 +210,6 @@
     "indicators/ta4d-pivot-points.md",
     "concepts/stock-group-behavior.md",
     "log.md.tmp.54761.dcc65929fde2",
-    "index.md.tmp.54761.61070a8e4dcb",
-    "index.md.tmp.54761.12fc94d8c8d5",
-    "index.md.tmp.54761.a6003c7aace7",
-    "index.md.tmp.54761.37f2cb141485",
     "concepts/price-bars.md",
     "concepts/point-and-figure.md",
     "concepts/ichimoku.md",
@@ -219,7 +220,6 @@
     "concepts/trendlines-channels.md",
     "indicators/average-true-range.md",
     "indicators/stochastic-oscillator.md",
-    "indicators/moving-averages.md",
-    "indicators/bollinger-bands.md"
+    "indicators/moving-averages.md"
   ]
 }

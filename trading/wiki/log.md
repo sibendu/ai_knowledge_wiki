@@ -19,6 +19,20 @@ Append entries in reverse chronological order. Use headings that are easy to sea
 ## [YYYY-MM-DD] maintenance | Change Summary
 ```
 
+## [2026-07-03] chart-analysis | Stock Deep Analysis — VCP/Pivotal Points — ADANIPORTS, NESTLEIND, CIPLA, BHEL, ANGELONE, ONGC + 8 avoids
+
+- Deep-read analysis using VCP contraction, Livermore pivotal-point methodology, and SEPA/Trend Template on 14 NSE stocks.
+- ADANIPORTS: new 52w high 1891.10 on Jul 03; 3-contraction VCP (28%→9%→6.8%); 8/8 TT; vol contracting. Top pick.
+- NESTLEIND: 6.8% VCP base (tied with ADANIPORTS for tightest); 8/8 TT; approaching 1498.10 pivot. Post-split data.
+- CIPLA: V-recovery from 1341.10 low (Jun 17); 7/8 TT; 2.6:1 R:R on pullback to MA50 zone (1421).
+- BHEL: +107% from Apr low; now pulling back below MA50; wait for reclaim of 391.91.
+- 7 Stage 4 avoids: HINDUNILVR, COLPAL, PFIZER, CONCOR, JIOFIN, AWL, MCX.
+- ONGC: near 52w low; below all MAs; no setup; watch after MA200 (258) reclaim.
+- Data notes: NESTLEIND, ANGELONE, MCX all have price discontinuities (splits/corporate actions); post-gap data used.
+- Created analysis page: `wiki/trade-journal/analysis/2026-07/2026-07-03-stock-swing-deep-analysis-14-symbols.md`.
+- Updated `wiki/watchlist.md` with 9 new rows.
+- Updated `wiki/index.md`.
+
 ## [2026-07-03] chart-analysis | ETF Deep Analysis — VCP/Pivotal Points — MONQ50, MIDCAPETF, JUNIORBEES, NEXT50IETF, HDFCSML250, MOSMALL250, MOALPHA50, ALPHA, BANKBEES, MON100, MAFANG, MASPTOP50 and 10 avoids
 
 - Deep-read analysis using VCP contraction measurement, Livermore pivotal-point methodology, and SEPA/Trend Template on 22 NSE ETFs.
