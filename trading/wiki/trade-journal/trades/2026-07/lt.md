@@ -67,7 +67,7 @@ These values align with the 2026-06-28 scan's LT pullback scenario: analysis ent
 
 ## Outcome
 
-Open. Exit, P&L, and post-trade review are not yet recorded in [all-trades-2026](../all-trades-2026.md).
+Position is open. Exit, P&L, and post-trade review will be recorded after a sell is entered in [all-trades-2026](../all-trades-2026.md).
 
 ## What Worked
 
@@ -82,7 +82,7 @@ Open. Exit, P&L, and post-trade review are not yet recorded in [all-trades-2026]
 
 - **Setup alignment:** High, based on the 2026-06-28 scan.
 - **Risk definition:** Medium; target and stop loss are recorded and align with the prior analysis, but were documented after execution.
-- **Execution completeness:** Partial; entry is recorded, but actual exit remains open.
+- **Execution status:** Open position; entry and risk plan are recorded, exit review pending until a sell is recorded.
 
 ## Lessons
 

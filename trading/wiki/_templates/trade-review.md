@@ -25,11 +25,15 @@ Use this section when target, stop loss, or R:R were not supplied with the trade
 
 ## Outcome
 
+For open positions, use: `Position is open. Exit, P&L, and post-trade review will be recorded after a sell is entered in the annual ledger.`
+
 ## What Worked
 
 ## What Failed
 
 ## Rule Adherence
+
+For open positions, use: `Execution status: Open position; entry and risk plan are recorded, exit review pending until a sell is recorded.`
 
 ## Lessons
 
