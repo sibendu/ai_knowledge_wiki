@@ -2,7 +2,7 @@
 type: log
 status: active
 created: 2026-06-13
-updated: 2026-07-03
+updated: 2026-07-04
 tags: [log]
 sources: []
 confidence: high
@@ -18,6 +18,24 @@ Append entries in reverse chronological order. Use headings that are easy to sea
 ## [YYYY-MM-DD] lint | Scope
 ## [YYYY-MM-DD] maintenance | Change Summary
 ```
+
+## [2026-07-04] chart-analysis | Deep VCP/Livermore — NAVINFLUOR, BALAMINES, BSE, BHEL, COALINDIA, CAMS + 5 more
+
+- Scanner: `code/swing_analysis.py --deep`
+- Symbols: 11 analyzed (CAMS, CDSL, BSE, ONGC, CONCOR, LICI, NAVINFLUOR, BALAMINES, BHEL, APLAPOLLO, COALINDIA)
+- Deep ratings: BALAMINES (Strong VCP Setup, 9 contractions, vol dryup 0.47x), NAVINFLUOR (VCP Setup, 6 contractions, vol dryup 0.61x)
+- Developing patterns: BSE, BHEL, COALINDIA, CONCOR
+- CONCOR notable: bullish Livermore signal (continuation pivot) despite Stage 4 decline
+- Analysis page: `wiki/trade-journal/analysis/2026-07/2026-07-04-nse-deep-vcp-scan-11-symbols.md`
+- Watchlist updated: yes (BALAMINES upgraded to Strong VCP Setup, NAVINFLUOR VCP details added)
+
+## [2026-07-04] chart-analysis | NAVINFLUOR, BALAMINES, BSE, BHEL, COALINDIA, CAMS + 5 more
+
+- Scanner: `code/swing_analysis.py`
+- Symbols: 11 analyzed (CAMS, CDSL, BSE, ONGC, CONCOR, LICI, NAVINFLUOR, BALAMINES, BHEL, APLAPOLLO, COALINDIA)
+- Setups found: NAVINFLUOR (Strong Setup, 8/8 TT, Stage 2), BALAMINES (Setup, 7/8 TT)
+- Analysis page: `wiki/trade-journal/analysis/2026-07/2026-07-04-nse-mixed-scan-11-symbols.md`
+- Watchlist updated: yes (2 new setups, 5 new watchlist/avoid entries, 3 existing rows updated)
 
 ## [2026-07-03] chart-analysis | Stock Deep Analysis — VCP/Pivotal Points — ADANIPORTS, NESTLEIND, CIPLA, BHEL, ANGELONE, ONGC + 8 avoids
 

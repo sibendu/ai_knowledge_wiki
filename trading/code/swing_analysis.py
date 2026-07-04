@@ -223,6 +223,230 @@ def reward_risk(entry: float, stop: float, target: float) -> float | None:
     return reward / risk
 
 
+def detect_vcp(bars: list[Bar], min_contractions: int = 2) -> dict:
+    """Detect Volatility Contraction Pattern (Mark Minervini).
+
+    Looks for successive pivot-high/low contractions where each swing
+    is shallower than the previous, with volume declining into the apex.
+    """
+    empty_vcp = {
+        "detected": False,
+        "contraction_count": 0,
+        "contractions": [],
+        "volume_dryup_ratio": None,
+        "last_contraction_depth_pct": None,
+        "tight_pattern": False,
+        "pivot_line": None,
+        "pivot_line_date": None,
+    }
+
+    if len(bars) < 60:
+        return {**empty_vcp, "reason": "Insufficient bars for VCP detection"}
+
+    pivots = find_pivots(bars, window=5)
+    if len(pivots) < 4:
+        return {**empty_vcp, "reason": "Too few pivots"}
+
+    contractions: list[dict] = []
+    highs = [p for p in pivots if p.kind == "H"]
+    lows = [p for p in pivots if p.kind == "L"]
+
+    for i in range(1, min(len(highs), len(lows))):
+        if i >= len(highs) or i >= len(lows):
+            break
+        prev_range = highs[i - 1].price - lows[i - 1].price
+        curr_range = highs[i].price - lows[i].price
+        if prev_range > 0:
+            depth_pct = (curr_range / highs[i].price) * 100
+            contraction_ratio = curr_range / prev_range
+            contractions.append({
+                "swing": i,
+                "depth_pct": round(depth_pct, 1),
+                "contraction_ratio": round(contraction_ratio, 2),
+                "high": highs[i].price,
+                "low": lows[i].price,
+                "high_date": highs[i].date.date().isoformat(),
+                "low_date": lows[i].date.date().isoformat(),
+            })
+
+    valid_contractions = [c for c in contractions if c["contraction_ratio"] < 0.85]
+
+    volumes = [bar.volume for bar in bars]
+    vol_50 = sma(volumes, 50)
+    vol_10 = sma(volumes, 10)
+    volume_dryup = None
+    if vol_50 and vol_10 and vol_50 > 0:
+        volume_dryup = round(vol_10 / vol_50, 2)
+
+    detected = len(valid_contractions) >= min_contractions
+    last_depth = valid_contractions[-1]["depth_pct"] if valid_contractions else None
+    tight = last_depth is not None and last_depth < 15
+
+    return {
+        "detected": detected,
+        "contraction_count": len(valid_contractions),
+        "contractions": valid_contractions[-4:],
+        "volume_dryup_ratio": volume_dryup,
+        "last_contraction_depth_pct": last_depth,
+        "tight_pattern": tight,
+        "pivot_line": highs[-1].price if highs else None,
+        "pivot_line_date": highs[-1].date.date().isoformat() if highs else None,
+    }
+
+
+def detect_livermore_pivots(bars: list[Bar]) -> dict:
+    """Detect Jesse Livermore pivotal points.
+
+    Identifies breakouts from consolidation (continuation pivots) and
+    new highs after meaningful corrections (reversal pivots).
+    """
+    empty_livermore = {
+        "pivotal_points": [],
+        "current_signal": "neutral",
+        "correction_from_50d_high_pct": 0.0,
+        "range_20d_pct": 0.0,
+        "volume_expanding": False,
+        "high_50d": 0.0,
+        "low_20d": 0.0,
+    }
+    if len(bars) < 60:
+        return empty_livermore
+
+    closes = [bar.close for bar in bars]
+    highs_list = [bar.high for bar in bars]
+    lows_list = [bar.low for bar in bars]
+
+    high_20 = max(highs_list[-20:])
+    high_50 = max(highs_list[-50:]) if len(bars) >= 50 else max(highs_list)
+    low_20 = min(lows_list[-20:])
+    latest = bars[-1]
+
+    correction_from_high = pct_change(high_50, latest.close)
+    range_20d = pct_change(low_20, high_20)
+
+    pivotal_points: list[dict] = []
+
+    if latest.close >= high_20 * 0.98 and range_20d < 15:
+        pivotal_points.append({
+            "type": "continuation",
+            "description": "Price near 20-day high after tight consolidation",
+            "trigger_price": round(high_20, 2),
+            "consolidation_range_pct": round(range_20d, 1),
+        })
+
+    if correction_from_high < -15 and latest.close > low_20 * 1.05:
+        pivotal_points.append({
+            "type": "reversal",
+            "description": "Meaningful correction with signs of recovery",
+            "correction_depth_pct": round(correction_from_high, 1),
+            "recovery_from_low_pct": round(pct_change(low_20, latest.close), 1),
+        })
+
+    recent_bars_20 = bars[-20:]
+    vol_expansion = False
+    if len(bars) >= 50:
+        avg_vol_50 = mean([b.volume for b in bars[-50:]])
+        avg_vol_5 = mean([b.volume for b in bars[-5:]])
+        if avg_vol_50 > 0 and avg_vol_5 / avg_vol_50 > 1.3:
+            vol_expansion = True
+
+    if latest.high >= high_50 and vol_expansion:
+        pivotal_points.append({
+            "type": "breakout",
+            "description": "New high with volume expansion",
+            "breakout_level": round(high_50, 2),
+            "volume_expansion": True,
+        })
+
+    if pivotal_points:
+        signal = "bullish"
+    elif correction_from_high < -25:
+        signal = "bearish"
+    else:
+        signal = "neutral"
+
+    return {
+        "pivotal_points": pivotal_points,
+        "current_signal": signal,
+        "correction_from_50d_high_pct": round(correction_from_high, 1),
+        "range_20d_pct": round(range_20d, 1),
+        "volume_expanding": vol_expansion,
+        "high_50d": round(high_50, 2),
+        "low_20d": round(low_20, 2),
+    }
+
+
+def compute_deep_metrics(bars: list[Bar], result: dict) -> dict:
+    """Compute VCP, Livermore, and extended SEPA metrics for a symbol."""
+    vcp = detect_vcp(bars)
+    livermore = detect_livermore_pivots(bars)
+
+    closes = [bar.close for bar in bars]
+    ma10 = sma(closes, 10)
+    ma20 = sma(closes, 20)
+    latest = bars[-1]
+
+    ma50_slope_5d = ma_slope(closes, 50, 5)
+    ma150_slope_20d = ma_slope(closes, 150, 20)
+
+    sepa_extended = {
+        "ma10": ma10,
+        "ma20": ma20,
+        "price_above_ma10": ma10 is not None and latest.close > ma10,
+        "price_above_ma20": ma20 is not None and latest.close > ma20,
+        "ma50_rising_5d": ma50_slope_5d is not None and ma50_slope_5d > 0,
+        "ma150_rising_20d": ma150_slope_20d is not None and ma150_slope_20d > 0,
+        "ma50_slope_5d_pct": ma50_slope_5d,
+        "ma150_slope_20d_pct": ma150_slope_20d,
+    }
+
+    deep_rating = compute_deep_rating(result, vcp, livermore, sepa_extended)
+
+    return {
+        "vcp": vcp,
+        "livermore": livermore,
+        "sepa_extended": sepa_extended,
+        "deep_rating": deep_rating,
+    }
+
+
+def compute_deep_rating(result: dict, vcp: dict, livermore: dict, sepa: dict) -> str:
+    """Synthesize VCP + Livermore + SEPA into an actionable rating."""
+    score = 0
+
+    if result.get("trend_score", 0) >= 7:
+        score += 3
+    elif result.get("trend_score", 0) >= 5:
+        score += 1
+
+    if vcp.get("detected"):
+        score += 2
+        if vcp.get("tight_pattern"):
+            score += 1
+        if vcp.get("volume_dryup_ratio") is not None and vcp["volume_dryup_ratio"] < 0.7:
+            score += 1
+
+    if livermore.get("current_signal") == "bullish":
+        score += 2
+        if any(p["type"] == "breakout" for p in livermore.get("pivotal_points", [])):
+            score += 1
+
+    if sepa.get("price_above_ma10") and sepa.get("price_above_ma20"):
+        score += 1
+    if sepa.get("ma50_rising_5d") and sepa.get("ma150_rising_20d"):
+        score += 1
+
+    if score >= 9:
+        return "Strong VCP Setup"
+    if score >= 7:
+        return "VCP Setup"
+    if score >= 5:
+        return "Developing Pattern"
+    if score >= 3:
+        return "Early Stage / Watch"
+    return "No Pattern"
+
+
 def rating_from_metrics(score: int, stage: str, momentum_1m: float, momentum_3m: float, near_high_pct: float) -> str:
     if score >= 7 and "Stage 2" in stage and momentum_1m > 0 and near_high_pct >= -12:
         return "Strong Setup"
@@ -235,7 +459,7 @@ def rating_from_metrics(score: int, stage: str, momentum_1m: float, momentum_3m:
     return "Avoid"
 
 
-def analyze_symbol(symbol: str, data_dir: Path, lookback_days: int) -> dict:
+def analyze_symbol(symbol: str, data_dir: Path, lookback_days: int, deep: bool = False) -> dict:
     requested_symbol = symbol
     data_symbol = SYMBOL_ALIASES.get(symbol, symbol)
     csv_path = data_dir / f"{data_symbol}.csv"
@@ -327,7 +551,7 @@ def analyze_symbol(symbol: str, data_dir: Path, lookback_days: int) -> dict:
     if avg_volume_50 and recent_volume_10:
         volume_ratio = recent_volume_10 / avg_volume_50
 
-    return {
+    base_result = {
         "symbol": requested_symbol,
         "data_symbol": data_symbol,
         "warnings": warnings,
@@ -377,6 +601,11 @@ def analyze_symbol(symbol: str, data_dir: Path, lookback_days: int) -> dict:
         },
     }
 
+    if deep:
+        base_result["deep"] = compute_deep_metrics(bars, base_result)
+
+    return base_result
+
 
 def sort_key(result: dict) -> tuple[int, float, float]:
     rating_rank = {
@@ -411,6 +640,46 @@ def scenario_line(name: str, scenario: dict) -> str:
     )
 
 
+def render_deep_section(result: dict) -> list[str]:
+    """Render VCP/Livermore/SEPA deep analysis for one symbol."""
+    deep = result.get("deep")
+    if not deep:
+        return []
+
+    lines: list[str] = ["", "**Deep Analysis (VCP / Livermore / SEPA):**", ""]
+    lines.append(f"- **Deep Rating:** {deep['deep_rating']}")
+
+    vcp = deep["vcp"]
+    if vcp["detected"]:
+        lines.append(f"- **VCP Detected:** Yes ({vcp['contraction_count']} contractions, "
+                     f"tight={vcp['tight_pattern']}, volume dryup={vcp['volume_dryup_ratio']}x)")
+        if vcp.get("pivot_line"):
+            lines.append(f"  - Pivot line (breakout trigger): {fmt_price(vcp['pivot_line'])} ({vcp['pivot_line_date']})")
+        for c in vcp.get("contractions", []):
+            lines.append(f"  - Swing {c['swing']}: depth {c['depth_pct']}%, ratio {c['contraction_ratio']} "
+                         f"({c['high_date']} high {fmt_price(c['high'])} / {c['low_date']} low {fmt_price(c['low'])})")
+    else:
+        lines.append(f"- **VCP Detected:** No ({vcp.get('reason', 'contraction criteria not met')})")
+
+    liv = deep["livermore"]
+    lines.append(f"- **Livermore Signal:** {liv['current_signal']} "
+                 f"(correction from 50d high: {fmt_pct(liv['correction_from_50d_high_pct'])}, "
+                 f"20d range: {fmt_pct(liv['range_20d_pct'])})")
+    for pp in liv.get("pivotal_points", []):
+        lines.append(f"  - {pp['type'].title()}: {pp['description']}")
+
+    sepa = deep["sepa_extended"]
+    above_ma10 = "yes" if sepa["price_above_ma10"] else "no"
+    above_ma20 = "yes" if sepa["price_above_ma20"] else "no"
+    ma50_rising = "yes" if sepa["ma50_rising_5d"] else "no"
+    ma150_rising = "yes" if sepa["ma150_rising_20d"] else "no"
+    lines.append(f"- **SEPA Extended:** above MA10={above_ma10}, above MA20={above_ma20}, "
+                 f"MA50 rising 5d={ma50_rising} ({fmt_pct(sepa['ma50_slope_5d_pct'])}), "
+                 f"MA150 rising 20d={ma150_rising} ({fmt_pct(sepa['ma150_slope_20d_pct'])})")
+
+    return lines
+
+
 def render_markdown(results: list[dict], lookback_days: int) -> str:
     valid = [result for result in results if "error" not in result]
     errors = [result for result in results if "error" in result]
@@ -431,20 +700,46 @@ def render_markdown(results: list[dict], lookback_days: int) -> str:
         "",
         "The scan combines Stage Analysis, a Minervini-style 8-point Trend Template, 1/3/6-month momentum, 52-week distance, recent pivots, ATR-based risk levels, and volume/delivery context. Ratings are mechanical research labels, not trade instructions.",
         "",
+    ]
+
+    has_deep = any(result.get("deep") for result in valid)
+    if has_deep:
+        lines.append("**Deep mode enabled:** also evaluates VCP (Volatility Contraction Pattern), "
+                     "Livermore pivotal points, and extended SEPA criteria per symbol.")
+        lines.append("")
+
+    lines.extend([
         "## Ranked Summary",
         "",
-        "| Rank | Symbol | Rating | Stage | Bars | Close | 52wH dist | 52wL dist | Trend | 1m | 3m | Volume |",
-        "|---:|---|---|---|---:|---:|---:|---:|---:|---:|---:|---:|",
-    ]
+    ])
+
+    if has_deep:
+        lines.append("| Rank | Symbol | Rating | Deep Rating | Stage | Close | 52wH dist | Trend | 1m | 3m | VCP | Livermore |")
+        lines.append("|---:|---|---|---|---|---:|---:|---:|---:|---:|---|---|")
+    else:
+        lines.append("| Rank | Symbol | Rating | Stage | Bars | Close | 52wH dist | 52wL dist | Trend | 1m | 3m | Volume |")
+        lines.append("|---:|---|---|---|---:|---:|---:|---:|---:|---:|---:|---:|")
+
     for rank, result in enumerate(valid, start=1):
         volume = result["volume_ratio"]
         volume_text = "n/a" if volume is None else f"{volume:.2f}x"
-        lines.append(
-            f"| {rank} | {result['symbol']} | **{result['rating']}** | {result['stage']} | {result['bars_used']} | "
-            f"{fmt_price(result['close'])} | {fmt_pct(result['near_high_pct'])} | "
-            f"{fmt_pct(result['from_low_pct'])} | {result['trend_score']}/8 | "
-            f"{fmt_pct(result['momentum_1m'])} | {fmt_pct(result['momentum_3m'])} | {volume_text} |"
-        )
+        if has_deep:
+            deep = result.get("deep", {})
+            deep_rating = deep.get("deep_rating", "n/a") if deep else "n/a"
+            vcp_flag = "Yes" if deep and deep.get("vcp", {}).get("detected") else "No"
+            liv_signal = deep.get("livermore", {}).get("current_signal", "n/a") if deep else "n/a"
+            lines.append(
+                f"| {rank} | {result['symbol']} | **{result['rating']}** | {deep_rating} | {result['stage']} | "
+                f"{fmt_price(result['close'])} | {fmt_pct(result['near_high_pct'])} | {result['trend_score']}/8 | "
+                f"{fmt_pct(result['momentum_1m'])} | {fmt_pct(result['momentum_3m'])} | {vcp_flag} | {liv_signal} |"
+            )
+        else:
+            lines.append(
+                f"| {rank} | {result['symbol']} | **{result['rating']}** | {result['stage']} | {result['bars_used']} | "
+                f"{fmt_price(result['close'])} | {fmt_pct(result['near_high_pct'])} | "
+                f"{fmt_pct(result['from_low_pct'])} | {result['trend_score']}/8 | "
+                f"{fmt_pct(result['momentum_1m'])} | {fmt_pct(result['momentum_3m'])} | {volume_text} |"
+            )
 
     if errors:
         lines.extend(["", "## Missing / Unreadable Symbols", ""])
@@ -509,6 +804,7 @@ def render_markdown(results: list[dict], lookback_days: int) -> str:
         )
         for check in result["trend_checks"]:
             lines.append(f"- {check}")
+        lines.extend(render_deep_section(result))
         lines.append("")
 
     lines.extend(
@@ -533,18 +829,21 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--symbols", nargs="+", required=True)
     parser.add_argument("--output", default="analysis1.md", type=Path)
     parser.add_argument("--lookback-days", default=504, type=int)
+    parser.add_argument("--deep", action="store_true",
+                        help="Enable VCP, Livermore pivotal-point, and extended SEPA analysis")
     return parser.parse_args()
 
 
 def main() -> None:
     args = parse_args()
     results = [
-        analyze_symbol(symbol.upper(), args.data_dir, args.lookback_days)
+        analyze_symbol(symbol.upper(), args.data_dir, args.lookback_days, deep=args.deep)
         for symbol in args.symbols
     ]
     markdown = render_markdown(results, args.lookback_days)
     args.output.write_text(markdown, encoding="utf-8")
-    print(f"Wrote {args.output} for {len(results)} symbols")
+    mode = " (deep mode)" if args.deep else ""
+    print(f"Wrote {args.output} for {len(results)} symbols{mode}")
 
 
 if __name__ == "__main__":

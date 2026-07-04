@@ -8,6 +8,12 @@ This vault is maintained interchangeably by **Claude Code** and **Codex**, chose
 
 `AGENTS.md` is the canonical source. `CLAUDE.md` is a stub — it contains only a pointer to this file. **All conventions, workflows, and rules live here only.** Whenever you update `AGENTS.md`, also update the `stub last confirmed` date in `CLAUDE.md`.
 
+## Environment rules
+
+- **ALWAYS use `.venv/Scripts/python.exe` for ALL Python operations.** NEVER use `python`, `python3`, or any system Python. The venv has all required dependencies (pandas, etc.); system Python does not.
+- Use forward slashes or relative paths in bash commands. NEVER use backslashes or WSL-style `/mnt/c/` paths.
+- When running `code/swing_analysis.py`, use: `./.venv/Scripts/python.exe code/swing_analysis.py ...`
+
 ## What this repository is
 
 This is not a software project. It is an LLM-maintained stock-trading **knowledge vault** built on Andrej Karpathy's LLM Wiki pattern (see `llm-wiki.md`): compile knowledge from raw sources into a persistent, interlinked markdown wiki that compounds over time. There is no build, test, or lint toolchain — all "operations" are content edits to markdown files. The vault is also an Obsidian vault (`.obsidian/`).
