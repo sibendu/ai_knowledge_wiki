@@ -2,7 +2,7 @@
 type: index
 status: active
 created: 2026-06-13
-updated: 2026-07-04
+updated: 2026-07-05
 tags: [index]
 sources: []
 confidence: high
@@ -98,6 +98,8 @@ Read this page first when answering questions or ingesting sources. Update it wh
 
 ## Recent Analysis Sessions
 
+- [2026-07-05 NSE Deep VCP/Livermore/Pivotal — ARE&M, GVT&D](trade-journal/analysis/2026-07/2026-07-05-nse-deep-vcp-livermore-pivotal-are-gvt.md) — **GVT&D Developing Pattern** (9 contractions, 6/8 TT, +43.2% 6m, MA150/MA200 rising; watch MA50 reclaim 4772 or pullback to 4231); **ARE&M Developing Pattern** (13-contraction VCP but Stage 4 decline, low vol dryup 0.29x; avoid).
+- [2026-07-05 NSE Deep VCP/SEPA Analysis — 3 Symbols](trade-journal/analysis/2026-07/2026-07-05-nse-deep-vcp-sepa-3-symbols.md) — **EXIDEIND Strong VCP Setup** (12 contractions, 7/8 TT, +38.9% 3m, Livermore bullish); CANBK/PNB Early Stage Watch (VCP forming but weak trend, below all MAs).
 - [2026-07-04 NSE Deep VCP/Livermore Scan — 11 Symbols](trade-journal/analysis/2026-07/2026-07-04-nse-deep-vcp-scan-11-symbols.md) — BALAMINES Strong VCP Setup (9 contractions, tight, vol dryup 0.47x); NAVINFLUOR VCP Setup (6 contractions, 8/8 TT); BSE/BHEL/COALINDIA Developing Pattern; CONCOR bullish Livermore signal despite Stage 4.
 - [2026-07-04 NSE Mixed Scan — 11 Symbols](trade-journal/analysis/2026-07/2026-07-04-nse-mixed-scan-11-symbols.md) — NAVINFLUOR Strong Setup (8/8 TT, Stage 2); BALAMINES Setup (7/8 TT, +115% 3m); BSE/BHEL/COALINDIA watchlist; CDSL/CONCOR/LICI avoid.
 - [2026-07-03 Stock Swing Deep Analysis — VCP/Pivotal Points (14 symbols)](trade-journal/analysis/2026-07/2026-07-03-stock-swing-deep-analysis-14-symbols.md) — ADANIPORTS new 52w high today with 3-contraction VCP (8/8 TT); NESTLEIND 6.8% VCP base approaching pivot; CIPLA 2.6:1 pullback setup. BHEL extraordinary run but below MA50. 7 Stage 4 avoids (HUL, COLPAL, JIOFIN, AWL, PFIZER, CONCOR). ONGC/MCX watch.

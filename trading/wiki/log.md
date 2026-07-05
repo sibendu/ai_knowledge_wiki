@@ -2,7 +2,7 @@
 type: log
 status: active
 created: 2026-06-13
-updated: 2026-07-04
+updated: 2026-07-05
 tags: [log]
 sources: []
 confidence: high
@@ -18,6 +18,25 @@ Append entries in reverse chronological order. Use headings that are easy to sea
 ## [YYYY-MM-DD] lint | Scope
 ## [YYYY-MM-DD] maintenance | Change Summary
 ```
+
+## [2026-07-05] chart-analysis | Deep VCP/Livermore/Pivotal — GVT&D, ARE&M
+
+- Scanner: `code/swing_analysis.py --deep`
+- Symbols: 2 analyzed (GVT&D, ARE&M)
+- Deep ratings: **GVT&D Developing Pattern** (9 contractions, 6/8 TT, +43.2% 6m, long-term bullish but below MA50); **ARE&M Developing Pattern** (13-contraction VCP, Stage 4 decline, low vol dryup—avoid)
+- GVT&D: Watch MA50 reclaim (4772.65) on volume, or pullback entry to 4231.10 (2.4:1 R:R)
+- ARE&M: Requires MA200 turn positive + close >914.50 on volume to upgrade from Stage 4
+- Analysis page: `wiki/trade-journal/analysis/2026-07/2026-07-05-nse-deep-vcp-livermore-pivotal-are-gvt.md`
+- Watchlist updated: yes (both added as Watchlist; GVT&D check-back 2026-07-18, ARE&M 2026-08-07)
+
+## [2026-07-05] chart-analysis | Deep VCP/SEPA — EXIDEIND, CANBK, PNB
+
+- Scanner: `code/swing_analysis.py --deep`
+- Symbols: 3 analyzed (EXIDEIND, CANBK, PNB)
+- Deep ratings: **EXIDEIND Strong VCP Setup** (12 contractions, 7/8 TT, +38.9% 3m, Livermore bullish); CANBK/PNB Early Stage Watch
+- EXIDEIND entry: Pullback to 402.24 or breakout >431 on volume; 2.0:1 R:R on pullback scenario
+- Analysis page: `wiki/trade-journal/analysis/2026-07/2026-07-05-nse-deep-vcp-sepa-3-symbols.md`
+- Watchlist updated: yes (EXIDEIND upgraded to Strong VCP Setup, CANBK/PNB added as Watch; extended check-back to 2026-08-07)
 
 ## [2026-07-04] chart-analysis | Deep VCP/Livermore — NAVINFLUOR, BALAMINES, BSE, BHEL, COALINDIA, CAMS + 5 more
 
