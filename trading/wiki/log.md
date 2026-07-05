@@ -19,6 +19,15 @@ Append entries in reverse chronological order. Use headings that are easy to sea
 ## [YYYY-MM-DD] maintenance | Change Summary
 ```
 
+## [2026-07-05] chart-analysis | TCS
+
+- Scanner: `code/swing_analysis.py --deep`
+- Symbols: 1 analyzed (TCS)
+- Deep rating: **Early Stage / Watch** — VCP detected (9 contractions), Livermore bullish despite Stage 4 decline (0/8 TT)
+- Key levels: support 1976.80, resistance 2457.40; current-price R:R 3.1:1
+- Analysis page: `wiki/trade-journal/analysis/2026-07/2026-07-05-tcs-deep-vcp-sepa-analysis.md`
+- Watchlist updated: yes (added as Watchlist, check-back 2026-08-07)
+
 ## [2026-07-05] chart-analysis | Deep VCP/Livermore/Pivotal — GVT&D, ARE&M
 
 - Scanner: `code/swing_analysis.py --deep`
