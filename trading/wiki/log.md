@@ -2,7 +2,7 @@
 type: log
 status: active
 created: 2026-06-13
-updated: 2026-07-05
+updated: 2026-07-14
 tags: [log]
 sources: []
 confidence: high
@@ -18,6 +18,15 @@ Append entries in reverse chronological order. Use headings that are easy to sea
 ## [YYYY-MM-DD] lint | Scope
 ## [YYYY-MM-DD] maintenance | Change Summary
 ```
+
+## [2026-07-14] chart-analysis | AXISBANK, ADANIPORTS, MONQ50, EXIDEIND, NAVINFLUOR, BALAMINES
+
+- Scanner: `code/swing_analysis.py --deep`
+- Symbols: 6 analyzed (AXISBANK, ADANIPORTS, MONQ50, EXIDEIND, NAVINFLUOR, BALAMINES)
+- Setups found: BALAMINES Strong Setup (8/8 TT, VCP Setup), MONQ50 Strong Setup (Strong VCP Setup, bullish Livermore), NAVINFLUOR Strong Setup, ADANIPORTS Strong Setup, EXIDEIND Setup
+- Watchlist change: AXISBANK downgraded from Strong Setup to Watchlist because 1m/3m momentum is negative despite 7/8 TT and VCP detection
+- Analysis page: `wiki/trade-journal/analysis/2026-07/2026-07-14-priority-vcp-pivotal-sepa-scan.md`
+- Watchlist updated: yes
 
 ## [2026-07-05] chart-analysis | All Symbols — TCS, EXIDEIND, GVT&D, ARE&M, CANBK, PNB
 

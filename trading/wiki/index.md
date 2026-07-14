@@ -2,7 +2,7 @@
 type: index
 status: active
 created: 2026-06-13
-updated: 2026-07-05
+updated: 2026-07-14
 tags: [index]
 sources: []
 confidence: high
@@ -98,6 +98,7 @@ Read this page first when answering questions or ingesting sources. Update it wh
 
 ## Recent Analysis Sessions
 
+- [2026-07-14 Priority Deep VCP/Pivotal/SEPA Scan - AXISBANK, ADANIPORTS, MONQ50, EXIDEIND, NAVINFLUOR, BALAMINES](trade-journal/analysis/2026-07/2026-07-14-priority-vcp-pivotal-sepa-scan.md) - BALAMINES, MONQ50, NAVINFLUOR, and ADANIPORTS remain **Strong Setup**; EXIDEIND remains Setup; AXISBANK demoted to Watchlist despite VCP because 1m/3m momentum is negative.
 - [2026-07-05 NSE Swing Scan — All Symbols (TCS, EXIDEIND, GVT&D, ARE&M, CANBK, PNB)](trade-journal/analysis/2026-07/2026-07-05-nse-swing-scan-all-symbols.md) — **EXIDEIND Strong VCP Setup** (12 contractions, 7/8 TT, +38.9% 3m, pullback 402.24 R:R 2.0:1); **GVT&D Developing Pattern** (9 contractions, 6/8 TT, +43.2% 6m; watch MA50 reclaim 4772); **TCS deep signals** (VCP, Livermore bullish despite 0/8 TT); **ARE&M** 13-contraction VCP but Stage 4 avoid; CANBK/PNB Early Stage Watch.
 - [2026-07-04 NSE Deep VCP/Livermore Scan — 11 Symbols](trade-journal/analysis/2026-07/2026-07-04-nse-deep-vcp-scan-11-symbols.md) — BALAMINES Strong VCP Setup (9 contractions, tight, vol dryup 0.47x); NAVINFLUOR VCP Setup (6 contractions, 8/8 TT); BSE/BHEL/COALINDIA Developing Pattern; CONCOR bullish Livermore signal despite Stage 4.
 - [2026-07-04 NSE Mixed Scan — 11 Symbols](trade-journal/analysis/2026-07/2026-07-04-nse-mixed-scan-11-symbols.md) — NAVINFLUOR Strong Setup (8/8 TT, Stage 2); BALAMINES Setup (7/8 TT, +115% 3m); BSE/BHEL/COALINDIA watchlist; CDSL/CONCOR/LICI avoid.
