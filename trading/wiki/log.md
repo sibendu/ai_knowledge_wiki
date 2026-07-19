@@ -2,7 +2,7 @@
 type: log
 status: active
 created: 2026-06-13
-updated: 2026-07-14
+updated: 2026-07-19
 tags: [log]
 sources: []
 confidence: high
@@ -18,6 +18,26 @@ Append entries in reverse chronological order. Use headings that are easy to sea
 ## [YYYY-MM-DD] lint | Scope
 ## [YYYY-MM-DD] maintenance | Change Summary
 ```
+
+## [2026-07-19] chart-analysis | Broad deep scan - 54 symbols
+
+- Scanner: `code/swing_analysis.py --deep`
+- Symbols: 54 analyzed using 504-row lookback (~2 years)
+- Strong Setups: MONQ50, MON100, BANDHANBNK, MIDCAPETF
+- Setups: MSTCLTD, EXIDEIND, HAL, HONAUT, MOALPHA50, ZYDUSLIFE, CDSL, ALPHA, JUNIORBEES, NEXT50IETF
+- Conditional: ICICIBANK, LUXIND, BANKBEES, PIDILITIND, HUDCO, HDFCMOMENT
+- Broad avoid/repair theme: many large caps and prior watchlist names remain Stage 4 or weak trend-template names, including COLPAL, IRCTC, IRFC, TATAELXSI, INFY, ITC, RELIANCE, PNB, HINDUNILVR, NIFTYBEES, and others
+- Analysis page: `wiki/trade-journal/analysis/2026-07/2026-07-19-broad-legendary-investors-deep-scan.md`
+- Watchlist updated: yes
+
+## [2026-07-19] chart-analysis | APOLLOHOSP, HDFCSML250, BANKBEES, NESTLEIND, CIPLA, BSE + 12 more
+
+- Scanner: `code/swing_analysis.py --deep`
+- Symbols: 18 analyzed (APOLLOHOSP, HDFCSML250, BANKBEES, NESTLEIND, CIPLA, BSE, BHEL, ANGELONE, GVT&D, COALINDIA, MOSMALL250, MOALPHA50, JUNIORBEES, NEXT50IETF, ALPHA, MON100, MAFANG, MASPTOP50)
+- Setups found: BHEL, MAFANG, MON100, APOLLOHOSP Strong Setup; MOSMALL250, HDFCSML250, NESTLEIND, MOALPHA50, MASPTOP50, CIPLA, ALPHA, JUNIORBEES, NEXT50IETF Setup
+- Other ratings: BANKBEES Conditional; BSE, GVT&D, COALINDIA Watchlist; ANGELONE Avoid due to insufficient post-split history
+- Analysis page: `wiki/trade-journal/analysis/2026-07/2026-07-19-overdue-watchlist-deep-scan.md`
+- Watchlist updated: yes
 
 ## [2026-07-14] chart-analysis | AXISBANK, ADANIPORTS, MONQ50, EXIDEIND, NAVINFLUOR, BALAMINES
 
