@@ -2,7 +2,7 @@
 type: log
 status: active
 created: 2026-06-13
-updated: 2026-07-19
+updated: 2026-07-20
 tags: [log]
 sources: []
 confidence: high
@@ -18,6 +18,18 @@ Append entries in reverse chronological order. Use headings that are easy to sea
 ## [YYYY-MM-DD] lint | Scope
 ## [YYYY-MM-DD] maintenance | Change Summary
 ```
+
+## [2026-07-20] maintenance | Recorded LT sell trade
+
+- Closed LT in `wiki/trade-journal/trades/all-trades-2026.md`: sold 12 shares on 2026-07-07 at 3998.00.
+- Updated LT narrative with gross loss of 1,197.60 before costs and post-trade review: entry was made after 2-3 days of continuous decline; hindsight lesson is to wait for a reversal signal before buying a pullback.
+- Moved LT from Active to Closed in `wiki/watchlist.md`.
+
+## [2026-07-20] maintenance | Recorded NAM-INDIA sell trade
+
+- Closed NAM-INDIA in `wiki/trade-journal/trades/all-trades-2026.md`: sold 40 shares on 2026-07-08 at 1174.00.
+- Updated NAM-INDIA narrative with gross profit of 1,188.00 before costs and review: exit was neither target met nor stop hit; it was discretionary profit booking after price rose to about 1220, then fell to 1174.
+- Moved NAM-INDIA from Active to Closed in `wiki/watchlist.md`; noted that as of 2026-07-20 the stock is still around the 1160-1185 zone.
 
 ## [2026-07-19] chart-analysis | Broad deep scan - 54 symbols
 

@@ -2,7 +2,7 @@
 type: watchlist
 status: active
 created: 2026-06-25
-updated: 2026-07-19
+updated: 2026-07-20
 tags: [watchlist, swing-trading, monitoring]
 confidence: medium
 ---
@@ -19,7 +19,6 @@ Living dashboard for instruments under active monitoring. Updated after each cha
 
 | Instrument | Type | Flagged | Stage at Flag | Verdict | Entry Condition | Check-back | Analysis |
 |-----------|------|---------|--------------|---------|----------------|-----------|----------|
-| **LT** (entry 4097.8) | Stock (NSE) | 2026-06-28 | **Stage 2 markup** | **Triggered** | Bought 12 shares on 2026-07-01; target 4440, stop 3998 | 2026-07-12 | [Trade](trade-journal/trades/2026-07/lt.md), [2026 ledger](trade-journal/trades/all-trades-2026.md), [2026-06-28 scan](trade-journal/analysis/2026-06/2026-06-28-nse-swing-scan-analysis1.md) |
 | **BANDHANBNK** (~207.87) | Stock (NSE) | 2026-06-28 | **Stage 2 markup** | **Triggered** | Open position; latest scan 2026-07-19: Strong Setup, 8/8 TT, VCP Setup; watch 212.48 resistance and 203.65 support against trade plan. | 2026-08-02 | [2026-07-19 broad deep](trade-journal/analysis/2026-07/2026-07-19-broad-legendary-investors-deep-scan.md), [Trade](trade-journal/trades/2026-06/bandhanbnk.md), [2026 ledger](trade-journal/trades/all-trades-2026.md), [2026-06-28 scan](trade-journal/analysis/2026-06/2026-06-28-nse-swing-scan-analysis1.md) |
 | **MIDCAPETF** (~23.53) | ETF (NSE) | 2026-06-28 | **Stage 2 markup** | **Triggered** | Open position; latest scan 2026-07-19: Strong Setup, 7/8 TT, VCP Setup; watch 23.61 resistance and 23.04 support against trade plan. | 2026-08-02 | [2026-07-19 broad deep](trade-journal/analysis/2026-07/2026-07-19-broad-legendary-investors-deep-scan.md), [Trade](trade-journal/trades/2026-07/midcapetf.md), [2026 ledger](trade-journal/trades/all-trades-2026.md), [2026-07-03 ETF scan](trade-journal/analysis/2026-07/2026-07-03-etf-swing-scan-23-symbols.md) |
 | EXIDEIND (~419.45) | Stock (NSE) | 2026-07-05 | Mixed / transition | Setup | 7/8 TT; VCP Setup; watch 431.00 resistance and 382.42 support; prefer breakout with volume or pullback/support hold. | 2026-08-02 | [2026-07-19 broad deep](trade-journal/analysis/2026-07/2026-07-19-broad-legendary-investors-deep-scan.md), [2026-07-14 priority deep](trade-journal/analysis/2026-07/2026-07-14-priority-vcp-pivotal-sepa-scan.md), [2026-07-05 VCP deep](trade-journal/analysis/2026-07/2026-07-05-nse-swing-scan-all-symbols.md) |
@@ -27,7 +26,6 @@ Living dashboard for instruments under active monitoring. Updated after each cha
 | HDFCSML250 (~180.71) | ETF (NSE) | 2026-06-28 | Mixed / transition | Setup | 7/8 TT; Strong VCP Setup with bullish Livermore; pullback entry 177.30, stop 173.03, target 185.83 (R:R 2.0:1); current R:R only 1.1:1 | 2026-08-02 | [2026-07-19 overdue deep](trade-journal/analysis/2026-07/2026-07-19-overdue-watchlist-deep-scan.md), [2026-07-03 ETF scan](trade-journal/analysis/2026-07/2026-07-03-etf-swing-scan-23-symbols.md) |
 | ICICIBANK (~1,407.70) | Stock (NSE) | 2026-06-28 | Stage 3 topping / repair | Conditional | 5/8 TT; VCP Setup; watch 1434.40 resistance and 1336.00 support; prefer breakout with volume or pullback/support hold. | 2026-08-02 | [2026-07-19 broad deep](trade-journal/analysis/2026-07/2026-07-19-broad-legendary-investors-deep-scan.md), [2026-06-28 scan](trade-journal/analysis/2026-06/2026-06-28-nse-swing-scan-analysis1.md) |
 | AXISBANK (~1,317.60) | Stock (NSE) | 2026-06-28 | **Stage 2 markup** | Watchlist | VCP Setup; 7/8 TT; 1m -2.9%, 3m -2.7%; wait for trend repair, MA reclaim, or cleaner base before upgrade. | 2026-08-16 | [2026-07-19 broad deep](trade-journal/analysis/2026-07/2026-07-19-broad-legendary-investors-deep-scan.md), [2026-07-14 priority deep](trade-journal/analysis/2026-07/2026-07-14-priority-vcp-pivotal-sepa-scan.md), [2026-06-28 pivotal](trade-journal/analysis/2026-06/2026-06-28-pivotal-points-swing-opportunities.md) |
-| **NAM-INDIA** (entry 1144.30) | Stock (NSE) | 2026-06-28 | **Stage 2 confirmed** | **Triggered** | Bought 40 shares on 2026-06-29; target 1280-1380, stop 1038 | 2026-07-12 | [Trade](trade-journal/trades/2026-06/nam-india.md), [2026 ledger](trade-journal/trades/all-trades-2026.md), [2026-06-28 pivotal](trade-journal/analysis/2026-06/2026-06-28-pivotal-points-swing-opportunities.md) |
 | BANKBEES (~594.18) | ETF (NSE) | 2026-06-28 | Stage 3 topping / repair | Conditional | 5/8 TT; Early Stage / Watch; watch 623.98 resistance and 591.15 support; prefer breakout with volume or pullback/support hold. | 2026-08-02 | [2026-07-19 broad deep](trade-journal/analysis/2026-07/2026-07-19-broad-legendary-investors-deep-scan.md), [2026-07-19 overdue deep](trade-journal/analysis/2026-07/2026-07-19-overdue-watchlist-deep-scan.md), [2026-07-03 ETF scan](trade-journal/analysis/2026-07/2026-07-03-etf-swing-scan-23-symbols.md) |
 | SBIN (~1,015.40) | Stock (NSE) | 2026-06-28 | Stage 3 topping / repair | Watchlist | Developing Pattern; 5/8 TT; 1m -0.2%, 3m -4.5%; wait for trend repair, MA reclaim, or cleaner base before upgrade. | 2026-08-16 | [2026-07-19 broad deep](trade-journal/analysis/2026-07/2026-07-19-broad-legendary-investors-deep-scan.md), [2026-06-28 pivotal](trade-journal/analysis/2026-06/2026-06-28-pivotal-points-swing-opportunities.md) |
 | COLPAL (~2,008.70) | Stock (NSE) | 2026-06-28 | Stage 4 decline | Avoid | Early Stage / Watch; 1/8 TT; stage Stage 4 decline; avoid fresh swing exposure until base/trend repair improves. | 2026-10-19 | [2026-07-19 broad deep](trade-journal/analysis/2026-07/2026-07-19-broad-legendary-investors-deep-scan.md), [2026-06-28 pivotal](trade-journal/analysis/2026-06/2026-06-28-pivotal-points-swing-opportunities.md) |
@@ -86,7 +84,8 @@ Living dashboard for instruments under active monitoring. Updated after each cha
 
 | Instrument | Flagged | Closed | Outcome | Notes |
 |-----------|---------|--------|---------|-------|
-| - | - | - | - | - |
+| **LT** | 2026-06-28 | 2026-07-07 | Closed-Loss | Bought 12 shares at 4097.8 on 2026-07-01 and sold at stop 3998 on 2026-07-07; gross loss 1,197.60 before costs. Review: entry came after 2-3 days of continuous decline; should have waited for a reversal signal. [Trade](trade-journal/trades/2026-07/lt.md) |
+| **NAM-INDIA** | 2026-06-28 | 2026-07-08 | Closed-ProfitBooking | Bought 40 shares at 1144.30 on 2026-06-29 and sold at 1174.00 on 2026-07-08; gross profit 1,188.00 before costs. Not target met or stop hit: price rose to about 1220, then fell to 1174 and was sold for profit booking; as of 2026-07-20 it is still around the 1160-1185 zone. [Trade](trade-journal/trades/2026-06/nam-india.md) |
 
 ---
 
@@ -102,6 +101,7 @@ Living dashboard for instruments under active monitoring. Updated after each cha
 | Strong Avoid | Stage 4 structural decline; no setup exists; long check-back date |
 | Triggered | Entry condition met; position opened; move to trades journal |
 | Closed-Win | Position closed profitably |
+| Closed-ProfitBooking | Position closed profitably before target and without stop/invalidation |
 | Closed-Loss | Position closed at stop |
 | Closed-NoTrade | Watched and passed; did not meet entry criteria by expiry |
 

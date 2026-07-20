@@ -2,7 +2,7 @@
 type: index
 status: active
 created: 2026-06-13
-updated: 2026-07-19
+updated: 2026-07-20
 tags: [index]
 sources: []
 confidence: high
@@ -86,8 +86,8 @@ Read this page first when answering questions or ingesting sources. Update it wh
   - [Analysis](trade-journal/analysis/) - Pre-trade chart analysis sessions (one page per day).
   - [Trades](trade-journal/trades/) - Actual trade records and post-trade reviews.
 - [All Trades 2026](trade-journal/trades/all-trades-2026.md) - Annual actual-trade ledger.
-- [LT Trade Narrative](trade-journal/trades/2026-07/lt.md) - Narrative record for the open LT trade: bought 12 shares at 4097.8 on 2026-07-01.
-- [NAM-INDIA Trade Narrative](trade-journal/trades/2026-06/nam-india.md) - Narrative record for the open NAM-INDIA trade: bought 40 shares at 1144.30 on 2026-06-29.
+- [LT Trade Narrative](trade-journal/trades/2026-07/lt.md) - Closed-loss narrative for LT: bought 12 shares at 4097.8 on 2026-07-01 and sold at the 3998 stop on 2026-07-07.
+- [NAM-INDIA Trade Narrative](trade-journal/trades/2026-06/nam-india.md) - Closed profit-booking narrative: bought 40 shares at 1144.30 on 2026-06-29 and sold at 1174.00 on 2026-07-08 before target.
 - [BANDHANBNK Trade Narrative](trade-journal/trades/2026-06/bandhanbnk.md) - Narrative record for the open BANDHANBNK trade: bought 250 shares at 202.24 on 2026-06-30.
 - [MIDCAPETF Trade Narrative](trade-journal/trades/2026-07/midcapetf.md) - Narrative record for the open MIDCAPETF trade: bought 2000 units at 23.32 on 2026-07-01.
 - [Livermore Trading Principles](syntheses/livermore-trading-principles.md) - Durable synthesis of principles from `How to Trade in Stocks`.

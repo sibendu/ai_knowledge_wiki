@@ -2,15 +2,15 @@
 type: trade-review
 status: active
 created: 2026-07-03
-updated: 2026-07-03
-tags: [trade-review, swing-trading, nse, lt, open-position]
+updated: 2026-07-20
+tags: [trade-review, swing-trading, nse, lt, closed-loss]
 sources:
   - ../../analysis/2026-06/2026-06-28-nse-swing-scan-analysis1.md
 confidence: medium
 trade_date: 2026-07-01
 tickers: [LT]
 strategy: swing-trade
-position_status: open
+position_status: closed
 direction: long
 ---
 
@@ -26,7 +26,10 @@ This page records the narrative details for LT trades opened in July 2026. The a
 - **Quantity:** 12 shares.
 - **Entry price:** 4097.8.
 - **Gross entry value:** 49,173.60, excluding brokerage, taxes, slippage, and other charges.
-- **Position status:** Open as of 2026-07-03.
+- **Exit date:** 2026-07-07.
+- **Exit price:** 3998.00.
+- **Gross exit value:** 47,976.00, excluding brokerage, taxes, slippage, and other charges.
+- **Position status:** Closed at stop loss on 2026-07-07.
 
 ## Planned Thesis
 
@@ -67,30 +70,42 @@ These values align with the 2026-06-28 scan's LT pullback scenario: analysis ent
 
 ## Outcome
 
-Position is open. Exit, P&L, and post-trade review will be recorded after a sell is entered in [all-trades-2026](../all-trades-2026.md).
+The position was sold on 2026-07-07 at 3998.00, matching the planned stop loss. Gross sell value was 47,976.00, creating a gross loss of 1,197.60 before brokerage, taxes, slippage, and other charges.
+
+| Field | Value |
+|---|---:|
+| Exit date | 2026-07-07 |
+| Exit price | 3998.00 |
+| Gross exit value | 47,976.00 |
+| Gross profit / loss | -1,197.60 |
+| Outcome | Closed-Loss |
 
 ## What Worked
 
 - Entry aligned with a pre-existing watchlist setup rather than an unplanned trade.
 - Entry price was within the pullback area identified before the trade.
+- Stop discipline was followed; the position was exited when the planned stop was hit.
 
 ## What Failed
 
 - The entry was documented after execution rather than as a pre-entry order plan.
+- The stock had already been falling continuously for 2-3 days when the buy was placed. The fall continued after entry and hit the stop loss within a few days.
+- In hindsight, the better execution would have been to wait for a reversal signal before buying, rather than buying during an active short-term slide.
 
 ## Rule Adherence
 
 - **Setup alignment:** High, based on the 2026-06-28 scan.
 - **Risk definition:** Medium; target and stop loss are recorded and align with the prior analysis, but were documented after execution.
-- **Execution status:** Open position; entry and risk plan are recorded, exit review pending until a sell is recorded.
+- **Execution status:** Closed at the planned stop on 2026-07-07.
 
 ## Lessons
 
 - Future entry records should include target, stop loss, R:R, invalidation condition, and whether the trade is full size or pilot size. If target/stop/R:R are omitted, derive them from the matching analysis scenario and record that derivation here.
+- For pullback entries, do not treat a falling price inside the desired zone as sufficient by itself. Prefer evidence that selling pressure has paused or reversed, such as a reclaim, reversal candle, support hold, or higher low.
 
 ## Updates To Strategy / Setup Pages
 
-- No strategy page changes yet. Review after exit to determine whether the LT trade supports or weakens the pullback-entry process.
+- No strategy page changes yet. This trade weakens the pullback-entry process when it is used without a reversal signal or support confirmation.
 
 ## Related
 
