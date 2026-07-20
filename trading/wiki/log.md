@@ -19,6 +19,15 @@ Append entries in reverse chronological order. Use headings that are easy to sea
 ## [YYYY-MM-DD] maintenance | Change Summary
 ```
 
+## [2026-07-20] chart-analysis | LT
+
+- Scanner: `code/swing_analysis.py --deep`
+- Symbols: 1 analyzed using 252-row lookback (~1 year)
+- Setups found: none
+- Verdict: LT Watchlist / Early Stage; VCP trace detected, but Trend Template is 3/8, price is below MA50/150/200, momentum is negative, and Livermore is neutral
+- Analysis page: `wiki/trade-journal/analysis/2026-07/2026-07-20-lt-deep-1y-legendary-investor-scan.md`
+- Watchlist updated: yes
+
 ## [2026-07-20] maintenance | Recorded LT sell trade
 
 - Closed LT in `wiki/trade-journal/trades/all-trades-2026.md`: sold 12 shares on 2026-07-07 at 3998.00.
