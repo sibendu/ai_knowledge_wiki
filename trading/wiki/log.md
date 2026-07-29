@@ -19,6 +19,13 @@ Append entries in reverse chronological order. Use headings that are easy to sea
 ## [YYYY-MM-DD] maintenance | Change Summary
 ```
 
+## [2026-07-29] maintenance | Recorded BANDHANBNK sell trade
+
+- Closed BANDHANBNK in `wiki/trade-journal/trades/all-trades-2026.md`: sold 250 shares on 2026-07-22 at 189.00.
+- Updated BANDHANBNK narrative with gross loss of 3,310.00 before costs and review: price rose to about 220, nearly hitting the 222 target, then reversed sharply to hit the 189 stop and later traded near 167.
+- Moved BANDHANBNK from Active to Closed in `wiki/watchlist.md`.
+- Lesson recorded: consider partial booking or stop tightening after a swing trade reaches roughly 90-95% of target.
+
 ## [2026-07-29] chart-analysis | ADANIPORTS, NAVINFLUOR, BALAMINES, CAMS, APLAPOLLO, ICICIB22 + 12 more
 
 - Scanner: `code/swing_analysis.py --deep`
