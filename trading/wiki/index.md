@@ -2,7 +2,7 @@
 type: index
 status: active
 created: 2026-06-13
-updated: 2026-07-20
+updated: 2026-07-29
 tags: [index]
 sources: []
 confidence: high
@@ -98,6 +98,7 @@ Read this page first when answering questions or ingesting sources. Update it wh
 
 ## Recent Analysis Sessions
 
+- [2026-07-29 Watchlist Deep 1-Year VCP/Livermore/SEPA Scan](trade-journal/analysis/2026-07/2026-07-29-watchlist-deep-1y-vcp-livermore-sepa-scan.md) - Deep 252-row scan across 18 requested watchlist stocks/ETFs. Strong Setups: BALAMINES, APOLLOHOSP. Setups: EXIDEIND, MAFANG, HDFCSML250, MIDCAPETF. Conditional: APLAPOLLO. HUL missing local data; prior Avoid retained.
 - [2026-07-20 LT Deep 1-Year Legendary-Investor Scan](trade-journal/analysis/2026-07/2026-07-20-lt-deep-1y-legendary-investor-scan.md) - LT reviewed with 252-row lookback using deep VCP/Livermore/SEPA analysis. Verdict: Watchlist / Early Stage; VCP trace exists, but Trend Template is 3/8, price is below MA50/150/200, momentum is negative, and Livermore is neutral.
 - [2026-07-19 Broad Legendary-Investor Deep Scan - 54 Symbols](trade-journal/analysis/2026-07/2026-07-19-broad-legendary-investors-deep-scan.md) - Deep VCP/Livermore/SEPA scan across 54 stocks/ETFs using ~2 years of data. Strong Setups: MONQ50, MON100, BANDHANBNK, MIDCAPETF. Setups: MSTCLTD, EXIDEIND, HAL, HONAUT, MOALPHA50, ZYDUSLIFE, CDSL, ALPHA, JUNIORBEES, NEXT50IETF. Conditional: ICICIBANK, LUXIND, BANKBEES, PIDILITIND, HUDCO, HDFCMOMENT.
 - [2026-07-19 Overdue Watchlist Deep Scan - 18 Symbols](trade-journal/analysis/2026-07/2026-07-19-overdue-watchlist-deep-scan.md) - BHEL, MAFANG, MON100, and APOLLOHOSP upgraded to **Strong Setup**; HDFCSML250, MOSMALL250, NESTLEIND, MOALPHA50, MASPTOP50, CIPLA, ALPHA, JUNIORBEES, and NEXT50IETF remain Setup; BANKBEES conditional; ANGELONE avoid.

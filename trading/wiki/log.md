@@ -2,7 +2,7 @@
 type: log
 status: active
 created: 2026-06-13
-updated: 2026-07-20
+updated: 2026-07-29
 tags: [log]
 sources: []
 confidence: high
@@ -18,6 +18,17 @@ Append entries in reverse chronological order. Use headings that are easy to sea
 ## [YYYY-MM-DD] lint | Scope
 ## [YYYY-MM-DD] maintenance | Change Summary
 ```
+
+## [2026-07-29] chart-analysis | ADANIPORTS, NAVINFLUOR, BALAMINES, CAMS, APLAPOLLO, ICICIB22 + 12 more
+
+- Scanner: `code/swing_analysis.py --deep`
+- Symbols: 18 requested, 17 analyzed using 252-row lookback (~1 year); HUL missing `data_nse_calculated/HUL.csv`
+- Strong Setups: BALAMINES, APOLLOHOSP
+- Setups: EXIDEIND, MAFANG, HDFCSML250, MIDCAPETF
+- Conditional: APLAPOLLO
+- Notable downgrades/repairs: ADANIPORTS, NAVINFLUOR, BHEL, MONQ50, MON100, BANDHANBNK, BANKBEES, ICICIB22 shifted to Watchlist/Early Stage due to weaker 1m momentum, poorer Trend Template alignment, or repair context
+- Analysis page: `wiki/trade-journal/analysis/2026-07/2026-07-29-watchlist-deep-1y-vcp-livermore-sepa-scan.md`
+- Watchlist updated: yes
 
 ## [2026-07-20] chart-analysis | LT
 
