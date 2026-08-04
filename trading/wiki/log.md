@@ -2,7 +2,7 @@
 type: log
 status: active
 created: 2026-06-13
-updated: 2026-07-29
+updated: 2026-08-04
 tags: [log]
 sources: []
 confidence: high
@@ -18,6 +18,20 @@ Append entries in reverse chronological order. Use headings that are easy to sea
 ## [YYYY-MM-DD] lint | Scope
 ## [YYYY-MM-DD] maintenance | Change Summary
 ```
+
+## [2026-08-04] chart-analysis | BALAMINES, APOLLOHOSP, EXIDEIND, HAL, ZYDUSLIFE, MSTCLTD + 8 more
+
+- Scanner: `code/swing_analysis.py --deep`
+- Symbols: 14 requested, 13 analyzed using a 252-row lookback (~1 year); MIDCAPETFINFY data file missing.
+- Setups found: EXIDEIND, HAL, GLAXO.
+- Conditional: PFIZER, HDFCMOMENT.
+- Analysis page: `wiki/trade-journal/analysis/2026-08/2026-08-04-priority-stocks-deep-1y-vcp-livermore-sepa-scan.md`
+- Watchlist updated: yes; BALAMINES, APOLLOHOSP, ZYDUSLIFE, and MSTCLTD downgraded to Watchlist.
+
+## [2026-07-31] maintenance | Self-contained Swing Research Dashboard
+
+- Added `swing-dashboard.html`: a portable dashboard based on the 2026-07-29 watchlist scan, with local refresh, snapshot export, and a Copilot Coach context bridge when opened in Codex.
+- The artifact does not fetch market data; its embedded market-sensitive research remains explicitly dated.
 
 ## [2026-07-29] maintenance | Recorded BANDHANBNK sell trade
 

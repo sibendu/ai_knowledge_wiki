@@ -2,7 +2,7 @@
 type: index
 status: active
 created: 2026-06-13
-updated: 2026-07-29
+updated: 2026-08-04
 tags: [index]
 sources: []
 confidence: high
@@ -95,9 +95,11 @@ Read this page first when answering questions or ingesting sources. Update it wh
 ## Active Monitoring
 
 - [Watchlist](watchlist.md) — Living dashboard of instruments under swing-trade monitoring. Read this when asked "which stocks should I check today/this week?"
+- [Swing Research Dashboard](../../swing-dashboard.html) — Self-contained, refresh-on-request research dashboard with an embedded Copilot Coach; snapshot date 2026-07-29.
 
 ## Recent Analysis Sessions
 
+- [2026-08-04 Priority Stocks Deep 1-Year VCP/Livermore/SEPA Scan](trade-journal/analysis/2026-08/2026-08-04-priority-stocks-deep-1y-vcp-livermore-sepa-scan.md) - 14 requested symbols; Setups: EXIDEIND, HAL, GLAXO. Conditional: PFIZER, HDFCMOMENT. BALAMINES, APOLLOHOSP, ZYDUSLIFE, and MSTCLTD downgraded to Watchlist; MIDCAPETFINFY data missing.
 - [2026-07-29 Watchlist Deep 1-Year VCP/Livermore/SEPA Scan](trade-journal/analysis/2026-07/2026-07-29-watchlist-deep-1y-vcp-livermore-sepa-scan.md) - Deep 252-row scan across 18 requested watchlist stocks/ETFs. Strong Setups: BALAMINES, APOLLOHOSP. Setups: EXIDEIND, MAFANG, HDFCSML250, MIDCAPETF. Conditional: APLAPOLLO. HUL missing local data; prior Avoid retained.
 - [2026-07-20 LT Deep 1-Year Legendary-Investor Scan](trade-journal/analysis/2026-07/2026-07-20-lt-deep-1y-legendary-investor-scan.md) - LT reviewed with 252-row lookback using deep VCP/Livermore/SEPA analysis. Verdict: Watchlist / Early Stage; VCP trace exists, but Trend Template is 3/8, price is below MA50/150/200, momentum is negative, and Livermore is neutral.
 - [2026-07-19 Broad Legendary-Investor Deep Scan - 54 Symbols](trade-journal/analysis/2026-07/2026-07-19-broad-legendary-investors-deep-scan.md) - Deep VCP/Livermore/SEPA scan across 54 stocks/ETFs using ~2 years of data. Strong Setups: MONQ50, MON100, BANDHANBNK, MIDCAPETF. Setups: MSTCLTD, EXIDEIND, HAL, HONAUT, MOALPHA50, ZYDUSLIFE, CDSL, ALPHA, JUNIORBEES, NEXT50IETF. Conditional: ICICIBANK, LUXIND, BANKBEES, PIDILITIND, HUDCO, HDFCMOMENT.
