@@ -2,7 +2,7 @@
 type: index
 status: active
 created: 2026-06-13
-updated: 2026-08-04
+updated: 2026-08-10
 tags: [index]
 sources: []
 confidence: high
@@ -99,6 +99,7 @@ Read this page first when answering questions or ingesting sources. Update it wh
 
 ## Recent Analysis Sessions
 
+- [2026-08-10 Priority Stocks Deep 1-Year VCP/Livermore/SEPA Scan](trade-journal/analysis/2026-08/2026-08-10-priority-stocks-deep-1y-vcp-livermore-sepa-scan.md) - Nine requested symbols; Strong Setup: APOLLOHOSP. Setups: EXIDEIND, HAL. GLAXO Conditional; ZYDUSLIFE, BALAMINES, MSTCLTD, NIFTYBEES, and BANKBEES remain Watchlist.
 - [2026-08-04 Priority Stocks Deep 1-Year VCP/Livermore/SEPA Scan](trade-journal/analysis/2026-08/2026-08-04-priority-stocks-deep-1y-vcp-livermore-sepa-scan.md) - 14 requested symbols; Setups: EXIDEIND, HAL, GLAXO. Conditional: PFIZER, HDFCMOMENT. BALAMINES, APOLLOHOSP, ZYDUSLIFE, and MSTCLTD downgraded to Watchlist; MIDCAPETFINFY data missing.
 - [2026-07-29 Watchlist Deep 1-Year VCP/Livermore/SEPA Scan](trade-journal/analysis/2026-07/2026-07-29-watchlist-deep-1y-vcp-livermore-sepa-scan.md) - Deep 252-row scan across 18 requested watchlist stocks/ETFs. Strong Setups: BALAMINES, APOLLOHOSP. Setups: EXIDEIND, MAFANG, HDFCSML250, MIDCAPETF. Conditional: APLAPOLLO. HUL missing local data; prior Avoid retained.
 - [2026-07-20 LT Deep 1-Year Legendary-Investor Scan](trade-journal/analysis/2026-07/2026-07-20-lt-deep-1y-legendary-investor-scan.md) - LT reviewed with 252-row lookback using deep VCP/Livermore/SEPA analysis. Verdict: Watchlist / Early Stage; VCP trace exists, but Trend Template is 3/8, price is below MA50/150/200, momentum is negative, and Livermore is neutral.

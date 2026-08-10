@@ -2,7 +2,7 @@
 type: log
 status: active
 created: 2026-06-13
-updated: 2026-08-04
+updated: 2026-08-10
 tags: [log]
 sources: []
 confidence: high
@@ -18,6 +18,14 @@ Append entries in reverse chronological order. Use headings that are easy to sea
 ## [YYYY-MM-DD] lint | Scope
 ## [YYYY-MM-DD] maintenance | Change Summary
 ```
+
+## [2026-08-10] chart-analysis | HAL, EXIDEIND, GLAXO, APOLLOHOSP, BALAMINES, ZYDUSLIFE + 3 more
+
+- Scanner: `code/swing_analysis.py --deep`
+- Symbols: 9 analyzed using a 252-row lookback (~1 year).
+- Setups found: APOLLOHOSP (Strong Setup), EXIDEIND, HAL; GLAXO is Conditional.
+- Analysis page: `wiki/trade-journal/analysis/2026-08/2026-08-10-priority-stocks-deep-1y-vcp-livermore-sepa-scan.md`
+- Watchlist updated: yes.
 
 ## [2026-08-04] chart-analysis | BALAMINES, APOLLOHOSP, EXIDEIND, HAL, ZYDUSLIFE, MSTCLTD + 8 more
 
