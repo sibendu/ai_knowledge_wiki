@@ -19,6 +19,22 @@ Append entries in reverse chronological order. Use headings that are easy to sea
 ## [YYYY-MM-DD] maintenance | Change Summary
 ```
 
+## [2026-08-10] chart-analysis | BANDHANBANK, BAJAJHLDNG, CDSL
+
+- Scanner: `code/swing_analysis.py --deep`
+- Symbols: 3 analyzed using a 252-row lookback (~1 year); local data used `BANDHANBNK` for requested `BANDHANBANK`.
+- Setups found: BAJAJHLDNG.
+- Analysis page: `wiki/trade-journal/analysis/2026-08/2026-08-10-bajajhldng-bandhanbank-cdsl-deep-1y-vcp-livermore-sepa-scan.md`
+- Watchlist updated: yes.
+
+## [2026-08-10] chart-analysis | TCS, INFY, ITC, HDFCBANK, HDFCAMC, NAM-INDIA + 1 more
+
+- Scanner: `code/swing_analysis.py --deep`
+- Symbols: 7 analyzed using a 252-row lookback (~1 year).
+- Setups found: none; NAM-INDIA remains a Watchlist candidate.
+- Analysis page: `wiki/trade-journal/analysis/2026-08/2026-08-10-largecap-financials-deep-1y-vcp-livermore-sepa-scan.md`
+- Watchlist updated: yes.
+
 ## [2026-08-10] chart-analysis | HAL, EXIDEIND, GLAXO, APOLLOHOSP, BALAMINES, ZYDUSLIFE + 3 more
 
 - Scanner: `code/swing_analysis.py --deep`
